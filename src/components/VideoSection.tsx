@@ -1,5 +1,4 @@
 import React from 'react';
-import { Play } from 'lucide-react';
 
 const VideoSection = () => {
   return (
@@ -8,17 +7,14 @@ const VideoSection = () => {
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           {/* Video Side */}
           <div className="relative">
-            <div className="aspect-video bg-dim-gray rounded-2xl overflow-hidden relative group cursor-pointer">
-              <img
-                src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="The Run Sun company video"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/40 transition-colors">
-                <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Play className="w-8 h-8 text-dim-gray ml-1" />
-                </div>
-              </div>
+            <div className="aspect-video bg-dim-gray rounded-2xl overflow-hidden">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="The Run Sun company video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
 
