@@ -19,84 +19,84 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
 		{ name: 'Contact', id: 'contact' },
 	];
 
-	return (
-		<header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-100">
-			<div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div className="flex justify-between items-center h-16">
-					<div className="flex items-center">
-						<button
-							onClick={() => setCurrentPage('home')}
-							className="text-2xl font-title font-bold text-red-ncs hover:opacity-80 transition-opacity"
-						>
-							The Run Sun
-						</button>
-					</div>
+        return (
+                <header className="fixed top-0 left-0 right-0 z-50 bg-orange-100 border-b border-orange-200">
+                        <div className="w-full px-4 sm:px-6 lg:px-10">
+                                <div className="flex justify-between items-center h-16">
+                                        <div className="flex items-center">
+                                                <button
+                                                        onClick={() => setCurrentPage('home')}
+                                                        className="text-2xl font-title font-bold text-black transition-opacity hover:opacity-80"
+                                                >
+                                                        The Run Sun
+                                                </button>
+                                        </div>
 
-					{/* Desktop Navigation */}
-					<nav className="hidden lg:flex items-center space-x-8">
-						{navigation.map((item) => (
-							<button
-								key={item.id}
-								onClick={() => setCurrentPage(item.id)}
-								className={`menu-item font-medium transition-colors ${currentPage === item.id
-										? 'text-red-ncs'
-										: 'text-dim-gray hover:text-red-ncs'
-									}`}
-							>
-								{item.name}
-							</button>
-						))}
-						<button
-							onClick={() => setCurrentPage('quote')}
-							className="bg-red-ncs text-white px-6 py-2 rounded-full hover:bg-red-ncs/90 transition-colors"
-						>
-							Get Quote
-						</button>
-					</nav>
+                                        {/* Desktop Navigation */}
+                                        <nav className="hidden lg:flex items-center space-x-8">
+                                                {navigation.map((item) => (
+                                                        <button
+                                                                key={item.id}
+                                                                onClick={() => setCurrentPage(item.id)}
+                                                                className={`menu-item font-medium transition-opacity ${currentPage === item.id
+                                                                                ? 'opacity-100'
+                                                                                : 'opacity-70 hover:opacity-100'
+                                                                        }`}
+                                                        >
+                                                                {item.name}
+                                                        </button>
+                                                ))}
+                                                <button
+                                                        onClick={() => setCurrentPage('quote')}
+                                                        className="px-6 py-2 rounded-full bg-white text-black border border-black transition-colors hover:bg-orange-200"
+                                                >
+                                                        Get Quote
+                                                </button>
+                                        </nav>
 
-					{/* Mobile menu button */}
-					<button
-						onClick={() => setIsMenuOpen(!isMenuOpen)}
-						className="lg:hidden p-2 text-dim-gray hover:text-red-ncs"
-					>
-						{isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-					</button>
-				</div>
+                                        {/* Mobile menu button */}
+                                        <button
+                                                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                                                className="lg:hidden p-2 text-black hover:opacity-80"
+                                        >
+                                                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                                        </button>
+                                </div>
 
-				{/* Mobile Navigation */}
-				{isMenuOpen && (
-					<div className="lg:hidden absolute top-16 left-0 right-0 bg-white border-b border-gray-100 shadow-lg">
-						<nav className="px-4 py-4 space-y-2">
-							{navigation.map((item) => (
-								<button
-									key={item.id}
-									onClick={() => {
-										setCurrentPage(item.id);
-										setIsMenuOpen(false);
-									}}
-									className={`block w-full text-left px-4 py-2 rounded-lg menu-item transition-colors ${currentPage === item.id
-											? 'text-red-ncs bg-light-green/20'
-											: 'text-dim-gray hover:text-red-ncs hover:bg-gray-50'
-										}`}
-								>
-									{item.name}
-								</button>
-							))}
-							<button
-								onClick={() => {
-									setCurrentPage('quote');
-									setIsMenuOpen(false);
-								}}
-								className="block w-full text-left px-4 py-2 bg-red-ncs text-white rounded-lg hover:bg-red-ncs/90 transition-colors mt-4"
-							>
-								Get Quote
-							</button>
-						</nav>
-					</div>
-				)}
-			</div>
-		</header>
-	);
+                                {/* Mobile Navigation */}
+                                {isMenuOpen && (
+                                        <div className="lg:hidden absolute top-16 left-0 right-0 bg-orange-100 border-b border-orange-200 shadow-lg">
+                                                <nav className="px-4 py-4 space-y-2">
+                                                        {navigation.map((item) => (
+                                                                <button
+                                                                        key={item.id}
+                                                                        onClick={() => {
+                                                                                setCurrentPage(item.id);
+                                                                                setIsMenuOpen(false);
+                                                                        }}
+                                                                        className={`block w-full text-left px-4 py-2 rounded-lg menu-item transition-opacity ${currentPage === item.id
+                                                                                        ? 'opacity-100 bg-white'
+                                                                                        : 'opacity-70 hover:opacity-100 hover:bg-white/70'
+                                                                                }`}
+                                                                >
+                                                                        {item.name}
+                                                                </button>
+                                                        ))}
+                                                        <button
+                                                                onClick={() => {
+                                                                        setCurrentPage('quote');
+                                                                        setIsMenuOpen(false);
+                                                                }}
+                                                                className="block w-full text-left px-4 py-2 rounded-lg bg-white text-black border border-black transition-colors mt-4 hover:bg-orange-200"
+                                                        >
+                                                                Get Quote
+                                                        </button>
+                                                </nav>
+                                        </div>
+                                )}
+                        </div>
+                </header>
+        );
 };
 
 export default Header;
