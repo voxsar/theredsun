@@ -57,7 +57,7 @@ const EthicalAI = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-24 bg-gradient-to-br from-brain/10 via-white to-light-green/20">
+      <section className="py-24 bg-gradient-to-br from-light-green/10 via-white to-light-green/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <div className="w-20 h-20 bg-red-ncs rounded-full flex items-center justify-center mx-auto mb-6">
