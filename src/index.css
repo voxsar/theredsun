@@ -1,5 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/styrene-a');
-@import url('https://fonts.cdnfonts.com/css/tiempos-text');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:wght@400;500;600;700&family=Numans&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,9 +6,10 @@
 
 /* Custom font fallbacks */
 .font-title {
-  font-family: 'Styrene A', 'Inter', 'Arial', sans-serif;
+  font-family: 'Numans', sans-serif;
 }
 
-.font-body {
-  font-family: 'Tiempos Text', 'Inter', 'Georgia', serif;
+.font-body,
+body {
+  font-family: 'Neuton', serif;
 }
