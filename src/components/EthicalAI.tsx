@@ -58,7 +58,7 @@ const EthicalAI = () => {
     <div className="pt-20">
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-light-green/10 via-white to-light-green/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <div className="w-20 h-20 bg-red-ncs rounded-full flex items-center justify-center mx-auto mb-6">
               <Brain className="w-10 h-10 text-white" />
@@ -103,7 +103,7 @@ const EthicalAI = () => {
 
       {/* Principles Section */}
       <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-title text-4xl font-bold text-dim-gray mb-6">Our Ethical AI Principles</h2>
             <p className="font-body text-xl text-dim-gray/70 max-w-3xl mx-auto">
@@ -130,7 +130,7 @@ const EthicalAI = () => {
 
       {/* Initiatives Section */}
       <section className="py-24 bg-gradient-to-br from-olivine/10 to-light-green/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-title text-4xl font-bold text-dim-gray mb-6">Our Initiatives</h2>
             <p className="font-body text-xl text-dim-gray/70 max-w-3xl mx-auto">
@@ -151,7 +151,7 @@ const EthicalAI = () => {
 
       {/* CTA Section */}
       <section className="py-24 bg-dim-gray text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-title text-4xl font-bold mb-6">Partner with Us for Ethical AI</h2>
           <p className="font-body text-xl text-white/80 max-w-3xl mx-auto mb-10">
             Ready to implement AI solutions that are both powerful and ethical? Let's work together 

@@ -32,7 +32,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
 
   return (
     <footer className="bg-dim-gray text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid lg:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2 space-y-6">
@@ -86,7 +86,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
                   <li key={item.name}>
                     <button
                       onClick={() => setCurrentPage(item.id)}
-                      className="text-white/70 hover:text-white transition-colors"
+                      className="list-item hover:text-white transition-colors"
                     >
                       {item.name}
                     </button>

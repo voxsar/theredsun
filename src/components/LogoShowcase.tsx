@@ -12,7 +12,7 @@ const LogoShowcase = () => {
 
   return (
     <section className="py-32 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <p className="text-lg font-body text-dim-gray/60 mb-8">
             Trusted by leading companies across Sri Lanka
