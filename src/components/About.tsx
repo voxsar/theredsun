@@ -34,8 +34,8 @@ const About = () => {
       <section className="py-24 bg-gradient-to-br from-light-green/20 via-white to-peach/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h1 className="text-5xl lg:text-6xl font-bold text-dim-gray mb-6">About The Run Sun</h1>
-            <p className="text-xl text-dim-gray/70 max-w-3xl mx-auto leading-relaxed">
+            <h1 className="font-title text-5xl lg:text-6xl font-bold text-dim-gray mb-6">About The Run Sun</h1>
+            <p className="font-body text-xl text-dim-gray/70 max-w-3xl mx-auto leading-relaxed">
               A leading IT solutions company in Sri Lanka, dedicated to transforming businesses through innovative technology solutions and ethical practices.
             </p>
           </div>
@@ -43,13 +43,13 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold text-dim-gray">Our Story</h2>
-                <p className="text-dim-gray/70 leading-relaxed">
+                <h2 className="font-title text-3xl font-bold text-dim-gray">Our Story</h2>
+                <p className="font-body text-dim-gray/70 leading-relaxed">
                   Founded in 2016, The Run Sun emerged with a vision to bridge the digital divide in Sri Lanka. 
                   We started as a small team of passionate technologists and have grown into a comprehensive 
                   IT solutions provider serving businesses across various industries.
                 </p>
-                <p className="text-dim-gray/70 leading-relaxed">
+                <p className="font-body text-dim-gray/70 leading-relaxed">
                   Our journey has been marked by continuous innovation, client success stories, and a 
                   commitment to sustainable and ethical technology practices. Today, we're proud to be 
                   one of Sri Lanka's most trusted IT partners.
@@ -81,8 +81,8 @@ const About = () => {
                     {stat.icon}
                   </div>
                 </div>
-                <div className="text-4xl font-bold mb-2">{stat.number}</div>
-                <div className="text-white/70">{stat.label}</div>
+                <div className="font-title text-4xl font-bold mb-2">{stat.number}</div>
+                <div className="font-body text-white/70">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -93,8 +93,8 @@ const About = () => {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl font-bold text-dim-gray mb-6">Our Values</h2>
-            <p className="text-xl text-dim-gray/70 max-w-3xl mx-auto">
+            <h2 className="font-title text-4xl font-bold text-dim-gray mb-6">Our Values</h2>
+            <p className="font-body text-xl text-dim-gray/70 max-w-3xl mx-auto">
               These core values guide every decision we make and every solution we deliver.
             </p>
           </div>
@@ -102,8 +102,8 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {values.map((value, index) => (
               <div key={index} className="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
-                <h3 className="text-2xl font-bold text-dim-gray mb-4">{value.title}</h3>
-                <p className="text-dim-gray/70 leading-relaxed">{value.description}</p>
+                <h3 className="font-title text-2xl font-bold text-dim-gray mb-4">{value.title}</h3>
+                <p className="font-body text-dim-gray/70 leading-relaxed">{value.description}</p>
               </div>
             ))}
           </div>
@@ -115,8 +115,8 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="bg-white rounded-3xl p-10 shadow-lg">
-              <h3 className="text-3xl font-bold text-dim-gray mb-6">Our Mission</h3>
-              <p className="text-dim-gray/70 leading-relaxed text-lg">
+              <h3 className="font-title text-3xl font-bold text-dim-gray mb-6">Our Mission</h3>
+              <p className="font-body text-dim-gray/70 leading-relaxed text-lg">
                 To empower Sri Lankan businesses with innovative, sustainable, and ethical technology solutions 
                 that drive growth, efficiency, and positive impact on society. We're committed to being the 
                 bridge between traditional business practices and the digital future.
@@ -124,8 +124,8 @@ const About = () => {
             </div>
 
             <div className="bg-white rounded-3xl p-10 shadow-lg">
-              <h3 className="text-3xl font-bold text-dim-gray mb-6">Our Vision</h3>
-              <p className="text-dim-gray/70 leading-relaxed text-lg">
+              <h3 className="font-title text-3xl font-bold text-dim-gray mb-6">Our Vision</h3>
+              <p className="font-body text-dim-gray/70 leading-relaxed text-lg">
                 To be the leading technology partner in Sri Lanka, recognized for our innovation, ethical 
                 practices, and contribution to sustainable development. We envision a future where every 
                 business, regardless of size, has access to world-class technology solutions.

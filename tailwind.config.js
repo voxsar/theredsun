@@ -11,8 +11,9 @@ export default {
         'peach': '#f4b393ff',
       },
       fontFamily: {
-        sans: ['Tiempos Text', 'Georgia', 'serif'],
-        title: ['Styrene A', 'Arial', 'sans-serif'],
+        sans: ['Neuton', 'serif'],
+        body: ['Neuton', 'serif'],
+        title: ['Numans', 'sans-serif'],
       },
       animation: {
         'bounce-slow': 'bounce 3s infinite',

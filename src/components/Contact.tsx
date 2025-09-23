@@ -51,8 +51,8 @@ const Contact = () => {
       <section className="py-24 bg-gradient-to-br from-red-ncs/10 via-white to-olivine/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h1 className="text-5xl lg:text-6xl font-bold text-dim-gray mb-6">Contact Us</h1>
-            <p className="text-xl text-dim-gray/70 max-w-3xl mx-auto">
+            <h1 className="font-title text-5xl lg:text-6xl font-bold text-dim-gray mb-6">Contact Us</h1>
+            <p className="font-body text-xl text-dim-gray/70 max-w-3xl mx-auto">
               Ready to transform your business with innovative IT solutions? Get in touch with our team today.
             </p>
           </div>
@@ -61,8 +61,8 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-dim-gray mb-8">Get in Touch</h2>
-                <p className="text-dim-gray/70 mb-8 leading-relaxed">
+                <h2 className="font-title text-3xl font-bold text-dim-gray mb-8">Get in Touch</h2>
+                <p className="font-body text-dim-gray/70 mb-8 leading-relaxed">
                   We'd love to hear from you. Whether you have a specific project in mind or just want to 
                   explore how we can help your business grow, our team is ready to assist you.
                 </p>
@@ -75,9 +75,9 @@ const Contact = () => {
                       {info.icon}
                     </div>
                     <div>
-                      <h3 className="font-semibold text-dim-gray mb-2">{info.title}</h3>
+                      <h3 className="font-title font-semibold text-dim-gray mb-2">{info.title}</h3>
                       {info.details.map((detail, detailIndex) => (
-                        <p key={detailIndex} className="text-dim-gray/70">{detail}</p>
+                        <p key={detailIndex} className="font-body text-dim-gray/70">{detail}</p>
                       ))}
                     </div>
                   </div>
@@ -90,7 +90,7 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-dim-gray mb-2">
+                    <label htmlFor="name" className="font-body block text-sm font-medium text-dim-gray mb-2">
                       Full Name
                     </label>
                     <input
@@ -106,7 +106,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-dim-gray mb-2">
+                    <label htmlFor="email" className="font-body block text-sm font-medium text-dim-gray mb-2">
                       Email Address
                     </label>
                     <input
@@ -123,7 +123,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-dim-gray mb-2">
+                  <label htmlFor="company" className="font-body block text-sm font-medium text-dim-gray mb-2">
                     Company Name
                   </label>
                   <input
@@ -138,7 +138,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-dim-gray mb-2">
+                  <label htmlFor="message" className="font-body block text-sm font-medium text-dim-gray mb-2">
                     Message
                   </label>
                   <textarea
@@ -173,8 +173,8 @@ const Contact = () => {
             <div className="aspect-video bg-gradient-to-br from-light-green/20 to-olivine/20 flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="w-16 h-16 text-red-ncs mx-auto mb-4" />
-                <p className="text-dim-gray font-medium">Interactive map would be embedded here</p>
-                <p className="text-dim-gray/60 text-sm">123 Galle Road, Colombo 03, Sri Lanka</p>
+                <p className="font-body text-dim-gray font-medium">Interactive map would be embedded here</p>
+                <p className="font-body text-dim-gray/60 text-sm">123 Galle Road, Colombo 03, Sri Lanka</p>
               </div>
             </div>
           </div>
