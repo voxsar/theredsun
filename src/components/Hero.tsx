@@ -1,24 +1,42 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Play } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
     {
-      title: "AI research and products that put safety at the frontier",
-      subtitle: "Transforming businesses through cutting-edge technology",
-      description: "We deliver comprehensive IT services and products that drive digital transformation and accelerate business growth.",
+      title: 'AI research and products that put safety at the frontier',
+      subtitle: 'Transforming businesses through cutting-edge technology',
+      description:
+        'We deliver comprehensive IT services and products that drive digital transformation and accelerate business growth.',
     },
     {
-      title: "AI research and products that put safety at the frontier",
-      subtitle: "Building a greener digital future",
-      description: "Our commitment to sustainability drives us to create eco-friendly solutions that benefit both business and environment.",
+      title: 'AI research and products that put safety at the frontier',
+      subtitle: 'Building a greener digital future',
+      description:
+        'Our commitment to sustainability drives us to create eco-friendly solutions that benefit both business and environment.',
     },
     {
-      title: "AI research and products that put safety at the frontier",
-      subtitle: "Responsible artificial intelligence for all",
-      description: "We develop AI solutions with ethics at the core, ensuring fairness, transparency, and positive impact on society.",
+      title: 'AI research and products that put safety at the frontier',
+      subtitle: 'Responsible artificial intelligence for all',
+      description:
+        'We develop AI solutions with ethics at the core, ensuring fairness, transparency, and positive impact on society.',
+    },
+  ];
+
+  const columnHighlights = [
+    {
+      heading: 'Strategic technology leadership',
+      body:
+        'Partner with a team that aligns advanced engineering with clear business outcomes for measurable growth.',
+      bullets: ['Modern platform architecture', 'Value-focused delivery roadmaps', 'Embedded knowledge transfer'],
+    },
+    {
+      heading: 'Responsible innovation at scale',
+      body:
+        'Confidently adopt AI and cloud capabilities with frameworks that keep people, planet, and governance at the center.',
+      bullets: ['Ethical AI implementation', 'Sustainability-first solutions', '24/7 strategic guidance'],
     },
   ];
 
@@ -30,97 +48,81 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Animated Background - Placeholder for Three.js/Spline */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-light-green/20 via-olivine/10 to-peach/20"></div>
-        <div className="absolute inset-0 opacity-30">
-          {[...Array(20)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute rounded-full bg-gradient-to-r from-red-ncs/20 to-olivine/20 animate-pulse"
-              style={{
-                width: Math.random() * 200 + 50,
-                height: Math.random() * 200 + 50,
-                left: Math.random() * 100 + '%',
-                top: Math.random() * 100 + '%',
-                animationDelay: Math.random() * 5 + 's',
-                animationDuration: (Math.random() * 10 + 10) + 's',
-              }}
-            />
-          ))}
-        </div>
-      </div>
-
-  <div className="relative z-10 max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
-          {/* Content Slider */}
-          <div className="space-y-8">
-            <div className="space-y-6">
-              <h1 className="text-5xl lg:text-7xl font-title font-bold text-black leading-tight">
-                {slides[currentSlide].title}
-              </h1>
-              <h2 className="text-2xl lg:text-3xl font-title text-red-ncs font-light">
-                {slides[currentSlide].subtitle}
-              </h2>
-              <p className="text-lg font-body text-dim-gray/80 leading-relaxed max-w-lg">
-                {slides[currentSlide].description}
-              </p>
-            </div>
-
-            <div className="flex items-center space-x-6">
-              <button className="bg-red-ncs text-white px-8 py-4 rounded-full hover:bg-red-ncs/90 transition-all duration-300 transform hover:scale-105">
-                Explore Solutions
-              </button>
-              <button className="flex items-center space-x-2 font-body text-dim-gray hover:text-red-ncs transition-colors group">
-                <div className="w-12 h-12 border-2 border-current rounded-full flex items-center justify-center group-hover:border-red-ncs">
-                  <Play size={16} className="ml-1" />
+    <section className="relative bg-orange-50 pt-28 pb-16 min-h-[60vh]">
+      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-10">
+        <div className="max-w-screen-2xl mx-auto">
+          <div className="bg-white border border-orange-100 rounded-[2.5rem] shadow-xl">
+            <div className="grid gap-10 lg:grid-cols-3 p-10 lg:p-14">
+              <div className="space-y-6 lg:pr-10">
+                <div className="space-y-4">
+                  <p className="uppercase tracking-[0.35em] text-xs font-semibold text-black">{slides[currentSlide].subtitle}</p>
+                  <h1 className="text-4xl lg:text-5xl font-title font-bold text-black leading-tight">
+                    {slides[currentSlide].title}
+                  </h1>
+                  <p className="text-lg font-body text-black leading-relaxed">
+                    {slides[currentSlide].description}
+                  </p>
                 </div>
-                <span className="font-title font-medium">Watch Demo</span>
-              </button>
+                <div className="flex flex-wrap gap-3">
+                  <button className="px-6 py-3 rounded-full border border-black bg-orange-100 text-black font-medium transition-colors hover:bg-orange-200">
+                    Explore solutions
+                  </button>
+                  <button className="px-6 py-3 rounded-full border border-black text-black font-medium transition-colors hover:bg-orange-200">
+                    Talk to our team
+                  </button>
+                </div>
+              </div>
+
+              {columnHighlights.map((highlight, index) => (
+                <div key={highlight.heading} className="flex flex-col justify-between rounded-3xl border border-orange-100 p-6 bg-orange-50">
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-title font-semibold text-black">{highlight.heading}</h3>
+                    <p className="text-base font-body text-black leading-relaxed">{highlight.body}</p>
+                    <ul className="space-y-2">
+                      {highlight.bullets.map((item) => (
+                        <li key={item} className="flex items-start gap-2 text-base text-black">
+                          <span className="mt-1 h-1.5 w-1.5 rounded-full bg-black" aria-hidden="true"></span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="mt-6 text-sm font-medium text-black">{`0${index + 1}`}</div>
+                </div>
+              ))}
             </div>
 
-            {/* Slide Controls */}
-            <div className="flex items-center space-x-4">
-              <button
-                onClick={() => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)}
-                className="p-2 rounded-full border border-dim-gray/20 hover:border-red-ncs hover:text-red-ncs transition-colors"
-              >
-                <ChevronLeft size={20} />
-              </button>
-              
-              <div className="flex space-x-2">
+            <div className="flex flex-col gap-4 border-t border-orange-100 px-10 py-6 lg:flex-row lg:items-center lg:justify-between">
+              <div className="flex items-center gap-2">
                 {slides.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => setCurrentSlide(index)}
-                    className={`w-3 h-3 rounded-full transition-colors ${
-                      index === currentSlide ? 'bg-red-ncs' : 'bg-dim-gray/20'
+                    className={`h-2 rounded-full transition-all ${
+                      index === currentSlide ? 'w-10 bg-black' : 'w-3 bg-black/50'
                     }`}
+                    aria-label={`Go to slide ${index + 1}`}
                   />
                 ))}
               </div>
 
-              <button
-                onClick={() => setCurrentSlide((prev) => (prev + 1) % slides.length)}
-                className="p-2 rounded-full border border-dim-gray/20 hover:border-red-ncs hover:text-red-ncs transition-colors"
-              >
-                <ChevronRight size={20} />
-              </button>
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={() => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)}
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-black text-black transition-colors hover:bg-orange-200"
+                  aria-label="Previous slide"
+                >
+                  <ChevronLeft size={20} />
+                </button>
+                <button
+                  onClick={() => setCurrentSlide((prev) => (prev + 1) % slides.length)}
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-black text-black transition-colors hover:bg-orange-200"
+                  aria-label="Next slide"
+                >
+                  <ChevronRight size={20} />
+                </button>
+              </div>
             </div>
-          </div>
-
-          {/* Visual Element */}
-          <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-light-green via-olivine to-peach rounded-3xl transform rotate-3 hover:rotate-6 transition-transform duration-500">
-              <img
-                src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Modern technology"
-                className="w-full h-full object-cover rounded-3xl"
-              />
-            </div>
-            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-peach rounded-full opacity-80 animate-bounce"></div>
-            <div className="absolute -top-6 -right-6 w-16 h-16 bg-light-green rounded-full opacity-80 animate-pulse"></div>
           </div>
         </div>
       </div>
