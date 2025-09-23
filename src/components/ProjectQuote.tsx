@@ -3,7 +3,20 @@ import { Send, CheckCircle, Clock, DollarSign } from 'lucide-react';
 
 const ProjectQuote = () => {
   const [step, setStep] = useState(1);
-  const [formData, setFormData] = useState({
+  interface QuoteFormData {
+    projectType: string;
+    budget: string;
+    timeline: string;
+    name: string;
+    email: string;
+    company: string;
+    phone: string;
+    description: string;
+    features: string[];
+    priority: 'low' | 'medium' | 'high';
+  }
+
+  const [formData, setFormData] = useState<QuoteFormData>({
     projectType: '',
     budget: '',
     timeline: '',
