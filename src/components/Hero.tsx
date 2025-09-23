@@ -6,17 +6,17 @@ const Hero = () => {
 
   const slides = [
     {
-      title: "Innovative IT Solutions",
+      title: "AI research and products that put safety at the frontier",
       subtitle: "Transforming businesses through cutting-edge technology",
       description: "We deliver comprehensive IT services and products that drive digital transformation and accelerate business growth.",
     },
     {
-      title: "Sustainable Technology",
+      title: "AI research and products that put safety at the frontier",
       subtitle: "Building a greener digital future",
       description: "Our commitment to sustainability drives us to create eco-friendly solutions that benefit both business and environment.",
     },
     {
-      title: "Ethical AI Development",
+      title: "AI research and products that put safety at the frontier",
       subtitle: "Responsible artificial intelligence for all",
       description: "We develop AI solutions with ethics at the core, ensuring fairness, transparency, and positive impact on society.",
     },
@@ -57,7 +57,7 @@ const Hero = () => {
           {/* Content Slider */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <h1 className="text-5xl lg:text-7xl font-title font-bold text-dim-gray leading-tight">
+              <h1 className="text-5xl lg:text-7xl font-title font-bold text-black leading-tight">
                 {slides[currentSlide].title}
               </h1>
               <h2 className="text-2xl lg:text-3xl font-title text-red-ncs font-light">
