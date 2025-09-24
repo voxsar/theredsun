@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Code, Cloud, Shield, Cpu, Database, Smartphone } from 'lucide-react';
+import { Code, Cloud, Cpu, Smartphone } from 'lucide-react';
 
 const Services = () => {
   const [hoveredService, setHoveredService] = useState<number | null>(null);
@@ -7,39 +7,27 @@ const Services = () => {
   const services = [
     {
       icon: <Code className="w-8 h-8" />,
-      title: "Custom Software Development",
-      description: "Tailored software solutions built to meet your unique business requirements and drive operational efficiency.",
-      features: ["Web Applications", "Mobile Apps", "Enterprise Software", "API Development"],
+      title: "Web & Application Development",
+      description: "Design and development of immersive web experiences and robust business applications.",
+      features: ["Experience Design", "Full-Stack Engineering", "API Development", "Ongoing Enhancements"],
     },
     {
       icon: <Cloud className="w-8 h-8" />,
-      title: "Cloud Solutions",
-      description: "Scalable cloud infrastructure and migration services to modernize your IT environment.",
-      features: ["Cloud Migration", "Infrastructure as Code", "DevOps", "Cloud Security"],
-    },
-    {
-      icon: <Shield className="w-8 h-8" />,
-      title: "Cybersecurity",
-      description: "Comprehensive security solutions to protect your digital assets and ensure business continuity.",
-      features: ["Security Audits", "Penetration Testing", "Compliance", "Incident Response"],
-    },
-    {
-      icon: <Cpu className="w-8 h-8" />,
-      title: "AI & Machine Learning",
-      description: "Intelligent automation and insights through ethical AI implementations.",
-      features: ["Predictive Analytics", "Process Automation", "Computer Vision", "Natural Language Processing"],
-    },
-    {
-      icon: <Database className="w-8 h-8" />,
-      title: "Data Analytics",
-      description: "Transform raw data into actionable insights for informed decision-making.",
-      features: ["Business Intelligence", "Data Warehousing", "Real-time Analytics", "Data Visualization"],
+      title: "Multiplatform Solutions",
+      description: "Unified codebases that deliver consistent experiences across web, desktop, and emerging platforms.",
+      features: ["Cross-Platform Frameworks", "Progressive Web Apps", "Desktop Packaging", "Performance Optimization"],
     },
     {
       icon: <Smartphone className="w-8 h-8" />,
-      title: "Digital Transformation",
-      description: "End-to-end digital transformation services to modernize your business processes.",
-      features: ["Process Optimization", "Legacy Modernization", "Change Management", "Training"],
+      title: "Mobile App Development",
+      description: "Native and hybrid mobile applications tailored to deliver intuitive user journeys.",
+      features: ["Product Strategy", "iOS & Android Delivery", "Mobile QA", "Lifecycle Management"],
+    },
+    {
+      icon: <Cpu className="w-8 h-8" />,
+      title: "Middleware & IoT",
+      description: "Integration layers and IoT ecosystems that connect devices, data, and enterprise services.",
+      features: ["Edge Computing", "Device Management", "Real-time Data Streams", "Secure Integrations"],
     },
   ];
 
@@ -49,7 +37,7 @@ const Services = () => {
         <div className="text-center mb-20">
           <h2 className="text-5xl font-title font-bold text-black/90 mb-6">Our Services</h2>
           <p className="text-xl font-body text-black/90/70 max-w-3xl mx-auto">
-            We provide comprehensive IT solutions that drive innovation and growth for businesses across Sri Lanka and beyond.
+            We provide comprehensive digital services that help organizations innovate, scale, and create meaningful customer experiences.
           </p>
         </div>
 
