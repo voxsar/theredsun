@@ -14,7 +14,7 @@ const LogoShowcase = () => {
     <section className="py-32 bg-white">
   <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <p className="text-lg font-body text-dim-gray/60 mb-8">
+          <p className="text-2xl text-black/90 mb-8">
             Trusted by leading companies across Sri Lanka
           </p>
         </div>
@@ -26,7 +26,7 @@ const LogoShowcase = () => {
               className="flex items-center justify-center opacity-40 hover:opacity-80 transition-opacity duration-300"
             >
               <div className="w-32 h-16 bg-gray-100 rounded-lg flex items-center justify-center">
-                <span className="font-title font-medium text-dim-gray text-sm">
+                <span className="font-title font-medium text-black/90 text-sm">
                   {client.name}
                 </span>
               </div>

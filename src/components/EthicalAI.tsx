@@ -63,8 +63,8 @@ const EthicalAI = () => {
             <div className="w-20 h-20 bg-red-ncs rounded-full flex items-center justify-center mx-auto mb-6">
               <Brain className="w-10 h-10 text-white" />
             </div>
-            <h1 className="font-title text-5xl lg:text-6xl font-bold text-dim-gray mb-6">Ethical AI</h1>
-            <p className="font-body text-xl text-dim-gray/70 max-w-4xl mx-auto leading-relaxed">
+            <h1 className="font-title text-5xl lg:text-6xl font-bold text-black/90 mb-6">Ethical AI</h1>
+            <p className="font-body text-xl text-black/90/70 max-w-4xl mx-auto leading-relaxed">
               At The Run Sun, we believe that artificial intelligence should be developed and deployed responsibly, 
               with ethics and human welfare at the forefront of every decision we make.
             </p>
@@ -73,14 +73,14 @@ const EthicalAI = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-6">
-                <h2 className="font-title text-3xl font-bold text-dim-gray">Our Commitment</h2>
-                <p className="font-body text-dim-gray/70 leading-relaxed">
+                <h2 className="font-title text-3xl font-bold text-black/90">Our Commitment</h2>
+                <p className="font-body text-black/90/70 leading-relaxed">
                   We are committed to developing AI solutions that are not only innovative and effective 
                   but also ethical, fair, and beneficial to society. Our approach to AI development is 
                   guided by a strong moral compass and a deep understanding of the potential impact 
                   of these technologies.
                 </p>
-                <p className="font-body text-dim-gray/70 leading-relaxed">
+                <p className="font-body text-black/90/70 leading-relaxed">
                   Every AI project we undertake goes through rigorous ethical review processes to ensure 
                   alignment with our values and societal benefit. We believe that responsible AI is not 
                   just good practice—it's essential for building a better future.
@@ -105,8 +105,8 @@ const EthicalAI = () => {
       <section className="py-24 bg-white">
   <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="font-title text-4xl font-bold text-dim-gray mb-6">Our Ethical AI Principles</h2>
-            <p className="font-body text-xl text-dim-gray/70 max-w-3xl mx-auto">
+            <h2 className="font-title text-4xl font-bold text-black/90 mb-6">Our Ethical AI Principles</h2>
+            <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto">
               These foundational principles guide every aspect of our AI development and deployment process.
             </p>
           </div>
@@ -120,8 +120,8 @@ const EthicalAI = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-red-ncs to-red-ncs/80 rounded-2xl flex items-center justify-center text-white mb-6">
                   {principle.icon}
                 </div>
-                <h3 className="font-title text-xl font-bold text-dim-gray mb-4">{principle.title}</h3>
-                <p className="font-body text-dim-gray/70 leading-relaxed">{principle.description}</p>
+                <h3 className="font-title text-xl font-bold text-black/90 mb-4">{principle.title}</h3>
+                <p className="font-body text-black/90/70 leading-relaxed">{principle.description}</p>
               </div>
             ))}
           </div>
@@ -132,8 +132,8 @@ const EthicalAI = () => {
       <section className="py-24 bg-gradient-to-br from-olivine/10 to-light-green/20">
   <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="font-title text-4xl font-bold text-dim-gray mb-6">Our Initiatives</h2>
-            <p className="font-body text-xl text-dim-gray/70 max-w-3xl mx-auto">
+            <h2 className="font-title text-4xl font-bold text-black/90 mb-6">Our Initiatives</h2>
+            <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto">
               We've implemented several initiatives to ensure our AI development process remains ethical and responsible.
             </p>
           </div>
@@ -141,8 +141,8 @@ const EthicalAI = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {initiatives.map((initiative, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg">
-                <h3 className="font-title text-2xl font-bold text-dim-gray mb-4">{initiative.title}</h3>
-                <p className="font-body text-dim-gray/70 leading-relaxed">{initiative.description}</p>
+                <h3 className="font-title text-2xl font-bold text-black/90 mb-4">{initiative.title}</h3>
+                <p className="font-body text-black/90/70 leading-relaxed">{initiative.description}</p>
               </div>
             ))}
           </div>
@@ -161,7 +161,7 @@ const EthicalAI = () => {
             <button className="bg-red-ncs text-white px-8 py-4 rounded-full hover:bg-red-ncs/90 transition-colors">
               Discuss Your AI Project
             </button>
-            <button className="border border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-dim-gray transition-colors">
+            <button className="border border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-black/90 transition-colors">
               Download AI Ethics Guide
             </button>
           </div>

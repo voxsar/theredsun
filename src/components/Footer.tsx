@@ -43,7 +43,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
                     onClick={() => setCurrentPage('home')}
                     className="text-2xl font-bold text-black transition-opacity hover:opacity-80"
                   >
-                    The Run Sun
+                    The Red Sun
                   </button>
                   <p className="mt-4 leading-relaxed text-black">
                     Leading IT solutions company in Sri Lanka, committed to transforming businesses
@@ -143,7 +143,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
             <div className="mt-12 border-t border-black/10 pt-8">
               <div className="flex flex-col gap-4 text-black md:flex-row md:items-center md:justify-between">
                 <p className="text-sm text-black">
-                  © 2024 The Run Sun (Pvt) Ltd. All rights reserved.
+                  © 2024 The Red Sun (Pvt) Ltd. All rights reserved.
                 </p>
                 <div className="flex space-x-6 text-sm text-black">
                   <a href="#" className="transition-opacity hover:opacity-80">Privacy Policy</a>

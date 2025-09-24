@@ -47,8 +47,8 @@ const Services = () => {
     <section id="services" className="py-32 bg-white">
   <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-title font-bold text-dim-gray mb-6">Our Services</h2>
-          <p className="text-xl font-body text-dim-gray/70 max-w-3xl mx-auto">
+          <h2 className="text-5xl font-title font-bold text-black/90 mb-6">Our Services</h2>
+          <p className="text-xl font-body text-black/90/70 max-w-3xl mx-auto">
             We provide comprehensive IT solutions that drive innovation and growth for businesses across Sri Lanka and beyond.
           </p>
         </div>
@@ -64,17 +64,17 @@ const Services = () => {
               <div className={`w-24 h-24 rounded-2xl flex items-center justify-center mb-8 transition-all duration-300 ${
                 hoveredService === index 
                   ? 'bg-red-ncs text-white scale-110' 
-                  : 'bg-gray-50 text-dim-gray'
+                  : 'bg-gray-50 text-black/90'
               }`}>
                 {service.icon}
               </div>
               
-              <h3 className="text-2xl font-title font-bold text-dim-gray mb-4">{service.title}</h3>
-              <p className="font-body text-dim-gray/70 mb-6 leading-relaxed">{service.description}</p>
+              <h3 className="text-2xl font-title font-bold text-black/90 mb-4">{service.title}</h3>
+              <p className="font-body text-black/90/70 mb-6 leading-relaxed">{service.description}</p>
               
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-sm font-body text-dim-gray/60">
+                  <li key={featureIndex} className="flex items-center text-sm font-body text-black/90/60">
                     <div className="w-1.5 h-1.5 bg-red-ncs rounded-full mr-3"></div>
                     {feature}
                   </li>

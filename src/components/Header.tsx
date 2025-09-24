@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                                                         onClick={() => setCurrentPage('home')}
                                                         className="text-2xl font-title font-bold text-black transition-opacity hover:opacity-80"
                                                 >
-                                                        The Run Sun
+                                                        THE RED S/N
                                                 </button>
                                         </div>
 
@@ -38,9 +38,9 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                                                         <button
                                                                 key={item.id}
                                                                 onClick={() => setCurrentPage(item.id)}
-                                                                className={`menu-item font-medium transition-opacity ${currentPage === item.id
+                                                                className={`menu-item text-xl transition-opacity ${currentPage === item.id
                                                                                 ? 'opacity-100'
-                                                                                : 'opacity-70 hover:opacity-100'
+                                                                                : 'opacity-70 hover:opacity-100 hover:underline'
                                                                         }`}
                                                         >
                                                                 {item.name}

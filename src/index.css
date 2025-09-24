@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Neuton:wght@400;500;600;700&family=Numans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:wght@400;500;600;700&family=SUSE+Mono:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,7 @@
 
 /* Custom font fallbacks */
 .font-title {
-  font-family: 'Numans', sans-serif;
+  font-family: 'Sansation', ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
 }
 
 .font-body,

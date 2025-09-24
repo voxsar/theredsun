@@ -73,9 +73,9 @@ const Sustainability = () => {
             <div className="w-20 h-20 bg-olivine rounded-full flex items-center justify-center mx-auto mb-6">
               <Leaf className="w-10 h-10 text-white" />
             </div>
-            <h1 className="font-title text-5xl lg:text-6xl font-bold text-dim-gray mb-6">Sustainability</h1>
-            <p className="font-body text-xl text-dim-gray/70 max-w-4xl mx-auto leading-relaxed">
-              At The Run Sun, we're committed to building a sustainable future through responsible business practices, 
+            <h1 className="font-title text-5xl lg:text-6xl font-bold text-black/90 mb-6">Sustainability</h1>
+            <p className="font-body text-xl text-black/90/70 max-w-4xl mx-auto leading-relaxed">
+              At The Red Sun, we're committed to building a sustainable future through responsible business practices, 
               green technologies, and environmental stewardship. Our planet's health is integral to our mission.
             </p>
           </div>
@@ -83,13 +83,13 @@ const Sustainability = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div className="space-y-6">
-                <h2 className="font-title text-3xl font-bold text-dim-gray">Our Environmental Commitment</h2>
-                <p className="font-body text-dim-gray/70 leading-relaxed">
+                <h2 className="font-title text-3xl font-bold text-black/90">Our Environmental Commitment</h2>
+                <p className="font-body text-black/90/70 leading-relaxed">
                   We recognize that technology companies have a significant environmental responsibility. 
                   That's why we've integrated sustainability into every aspect of our operations, from 
                   the way we design our offices to how we develop our software solutions.
                 </p>
-                <p className="font-body text-dim-gray/70 leading-relaxed">
+                <p className="font-body text-black/90/70 leading-relaxed">
                   Our comprehensive sustainability strategy focuses on reducing our environmental impact 
                   while creating solutions that help our clients achieve their own sustainability goals. 
                   We believe that green technology is not just good for the planet—it's good for business.
@@ -114,8 +114,8 @@ const Sustainability = () => {
       <section className="py-24 bg-white">
   <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="font-title text-4xl font-bold text-dim-gray mb-6">Our Green Initiatives</h2>
-            <p className="font-body text-xl text-dim-gray/70 max-w-3xl mx-auto">
+            <h2 className="font-title text-4xl font-bold text-black/90 mb-6">Our Green Initiatives</h2>
+            <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto">
               We've implemented comprehensive sustainability initiatives across all areas of our business operations.
             </p>
           </div>
@@ -129,8 +129,8 @@ const Sustainability = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-olivine to-light-green rounded-2xl flex items-center justify-center text-white mb-6">
                   {initiative.icon}
                 </div>
-                <h3 className="font-title text-xl font-bold text-dim-gray mb-4">{initiative.title}</h3>
-                <p className="font-body text-dim-gray/70 leading-relaxed mb-4">{initiative.description}</p>
+                <h3 className="font-title text-xl font-bold text-black/90 mb-4">{initiative.title}</h3>
+                <p className="font-body text-black/90/70 leading-relaxed mb-4">{initiative.description}</p>
                 <div className="bg-white rounded-lg p-3 border-l-4 border-olivine">
                   <p className="font-body text-sm font-medium text-olivine">Impact: {initiative.impact}</p>
                 </div>
@@ -144,8 +144,8 @@ const Sustainability = () => {
       <section className="py-24 bg-gray-50">
   <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="font-title text-4xl font-bold text-dim-gray mb-6">Sustainability Roadmap</h2>
-            <p className="font-body text-xl text-dim-gray/70 max-w-3xl mx-auto">
+            <h2 className="font-title text-4xl font-bold text-black/90 mb-6">Sustainability Roadmap</h2>
+            <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto">
               Our commitment to sustainability extends beyond today. Here's our roadmap for achieving even greater environmental impact.
             </p>
           </div>
@@ -159,8 +159,8 @@ const Sustainability = () => {
                   </div>
                 </div>
                 <div className="flex-grow">
-                  <h3 className="font-title text-2xl font-bold text-dim-gray mb-2">{goal.target}</h3>
-                  <p className="font-body text-dim-gray/70 leading-relaxed">{goal.description}</p>
+                  <h3 className="font-title text-2xl font-bold text-black/90 mb-2">{goal.target}</h3>
+                  <p className="font-body text-black/90/70 leading-relaxed">{goal.description}</p>
                 </div>
               </div>
             ))}
@@ -202,15 +202,15 @@ const Sustainability = () => {
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-br from-light-green/20 to-olivine/20">
   <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-title text-4xl font-bold text-dim-gray mb-6">Join Our Sustainability Journey</h2>
-          <p className="font-body text-xl text-dim-gray/70 max-w-3xl mx-auto mb-10">
+          <h2 className="font-title text-4xl font-bold text-black/90 mb-6">Join Our Sustainability Journey</h2>
+          <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto mb-10">
             Partner with us to build sustainable technology solutions that benefit both your business and the environment.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-olivine text-white px-8 py-4 rounded-full hover:bg-olivine/90 transition-colors">
               Green Solutions Consultation
             </button>
-            <button className="border border-dim-gray text-dim-gray px-8 py-4 rounded-full hover:bg-dim-gray hover:text-white transition-colors">
+            <button className="border border-dim-gray text-black/90 px-8 py-4 rounded-full hover:bg-dim-gray hover:text-white transition-colors">
               Sustainability Report 2024
             </button>
           </div>

@@ -47,8 +47,8 @@ const Products = () => {
     <section id="products" className="py-32 bg-orange-50">
   <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-title font-bold text-dim-gray mb-6">Our Products</h2>
-          <p className="text-xl font-body text-dim-gray/70 max-w-3xl mx-auto">
+          <h2 className="text-5xl font-title font-bold text-black/90 mb-6">Our Products</h2>
+          <p className="text-xl font-body text-black/90/70 max-w-3xl mx-auto">
             Innovative software products designed to solve real business challenges and drive digital transformation across industries.
           </p>
         </div>
@@ -64,7 +64,7 @@ const Products = () => {
               <div className={`w-24 h-24 rounded-2xl flex items-center justify-center mb-8 transition-all duration-300 ${
                 hoveredProduct === index 
                   ? 'bg-olivine text-white scale-110' 
-                  : 'bg-white text-dim-gray'
+                  : 'bg-white text-black/90'
               }`}>
                 {product.icon}
               </div>
@@ -75,15 +75,15 @@ const Products = () => {
                 </span>
               </div>
 
-              <h3 className="text-2xl font-title font-bold text-dim-gray mb-4">{product.name}</h3>
-              <p className="font-body text-dim-gray/70 mb-6 leading-relaxed">
+              <h3 className="text-2xl font-title font-bold text-black/90 mb-4">{product.name}</h3>
+              <p className="font-body text-black/90/70 mb-6 leading-relaxed">
                 {product.description}
               </p>
 
               <div className="mb-6">
                 <div className="grid grid-cols-1 gap-2">
                   {product.features.slice(0, 3).map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center text-sm font-body text-dim-gray/60">
+                    <div key={featureIndex} className="flex items-center text-sm font-body text-black/90/60">
                       <div className="w-1.5 h-1.5 bg-olivine rounded-full mr-3"></div>
                       {feature}
                     </div>

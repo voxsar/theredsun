@@ -89,20 +89,20 @@ const ProjectQuote = () => {
             <div className="w-20 h-20 bg-light-green rounded-full flex items-center justify-center mx-auto mb-8">
               <CheckCircle className="w-10 h-10 text-white" />
             </div>
-            <h1 className="font-title text-4xl font-bold text-dim-gray mb-6">Quote Request Submitted!</h1>
-            <p className="font-body text-xl text-dim-gray/70 mb-8">
+            <h1 className="font-title text-4xl font-bold text-black/90 mb-6">Quote Request Submitted!</h1>
+            <p className="font-body text-xl text-black/90/70 mb-8">
               Thank you for your project inquiry. Our team will review your requirements and
               get back to you within 24 hours with a detailed proposal.
             </p>
             <div className="space-y-4 mb-8">
-              <p className="font-body text-dim-gray/70">
+              <p className="font-body text-black/90/70">
                 <strong>What's Next:</strong>
               </p>
               <div className="space-y-2 text-left bg-gray-50 rounded-xl p-6">
-                <p className="font-body text-sm text-dim-gray/70">1. Our team reviews your requirements</p>
-                <p className="font-body text-sm text-dim-gray/70">2. We'll schedule a consultation call</p>
-                <p className="font-body text-sm text-dim-gray/70">3. You'll receive a detailed proposal</p>
-                <p className="font-body text-sm text-dim-gray/70">4. We discuss and refine the project scope</p>
+                <p className="font-body text-sm text-black/90/70">1. Our team reviews your requirements</p>
+                <p className="font-body text-sm text-black/90/70">2. We'll schedule a consultation call</p>
+                <p className="font-body text-sm text-black/90/70">3. You'll receive a detailed proposal</p>
+                <p className="font-body text-sm text-black/90/70">4. We discuss and refine the project scope</p>
               </div>
             </div>
             <button
@@ -127,8 +127,8 @@ const ProjectQuote = () => {
     <div className="pt-20 min-h-screen bg-gradient-to-br from-peach/10 via-white to-red-ncs/5">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center mb-12">
-          <h1 className="font-title text-5xl font-bold text-dim-gray mb-6">Get Your Project Quote</h1>
-          <p className="font-body text-xl text-dim-gray/70 max-w-3xl mx-auto">
+          <h1 className="font-title text-5xl font-bold text-black/90 mb-6">Get Your Project Quote</h1>
+          <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto">
             Tell us about your project and we'll provide you with a detailed quote and timeline.
           </p>
         </div>
@@ -142,7 +142,7 @@ const ProjectQuote = () => {
                   className={`w-10 h-10 rounded-full flex items-center justify-center font-title font-bold text-sm ${
                     step >= num
                       ? 'bg-red-ncs text-white'
-                      : 'bg-gray-200 text-dim-gray/60'
+                      : 'bg-gray-200 text-black/90/60'
                   }`}
                 >
                   {num}
@@ -162,11 +162,11 @@ const ProjectQuote = () => {
         <form onSubmit={handleSubmit} className="bg-white rounded-3xl p-8 shadow-lg">
           {step === 1 && (
             <div className="space-y-8">
-              <h2 className="font-title text-2xl font-bold text-dim-gray mb-6">Project Details</h2>
+              <h2 className="font-title text-2xl font-bold text-black/90 mb-6">Project Details</h2>
 
               {/* Project Type */}
               <div>
-                <label className="font-body block text-sm font-medium text-dim-gray mb-4">
+                <label className="font-body block text-sm font-medium text-black/90 mb-4">
                   What type of project do you need? *
                 </label>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -181,8 +181,8 @@ const ProjectQuote = () => {
                           : 'border-gray-200 hover:border-red-ncs/50'
                       }`}
                     >
-                      <h3 className="font-title font-semibold text-dim-gray">{type.name}</h3>
-                      <p className="font-body text-sm text-dim-gray/70 mt-1">{type.description}</p>
+                      <h3 className="font-title font-semibold text-black/90">{type.name}</h3>
+                      <p className="font-body text-sm text-black/90/70 mt-1">{type.description}</p>
                     </button>
                   ))}
                 </div>
@@ -190,7 +190,7 @@ const ProjectQuote = () => {
 
               {/* Budget */}
               <div>
-                <label className="font-body block text-sm font-medium text-dim-gray mb-4">
+                <label className="font-body block text-sm font-medium text-black/90 mb-4">
                   What's your budget range? *
                 </label>
                 <div className="grid md:grid-cols-2 gap-4">
@@ -206,7 +206,7 @@ const ProjectQuote = () => {
                       }`}
                     >
                       <DollarSign className="w-5 h-5 text-red-ncs mr-3" />
-                      <span className="font-body font-medium text-dim-gray">{budget.label}</span>
+                      <span className="font-body font-medium text-black/90">{budget.label}</span>
                     </button>
                   ))}
                 </div>
@@ -214,7 +214,7 @@ const ProjectQuote = () => {
 
               {/* Timeline */}
               <div>
-                <label className="font-body block text-sm font-medium text-dim-gray mb-4">
+                <label className="font-body block text-sm font-medium text-black/90 mb-4">
                   When do you need this completed? *
                 </label>
                 <div className="grid md:grid-cols-2 gap-4">
@@ -230,7 +230,7 @@ const ProjectQuote = () => {
                       }`}
                     >
                       <Clock className="w-5 h-5 text-red-ncs mr-3" />
-                      <span className="font-body font-medium text-dim-gray">{timeline.label}</span>
+                      <span className="font-body font-medium text-black/90">{timeline.label}</span>
                     </button>
                   ))}
                 </div>
@@ -251,11 +251,11 @@ const ProjectQuote = () => {
 
           {step === 2 && (
             <div className="space-y-8">
-              <h2 className="font-title text-2xl font-bold text-dim-gray mb-6">Features & Requirements</h2>
+              <h2 className="font-title text-2xl font-bold text-black/90 mb-6">Features & Requirements</h2>
 
               {/* Features */}
               <div>
-                <label className="font-body block text-sm font-medium text-dim-gray mb-4">
+                <label className="font-body block text-sm font-medium text-black/90 mb-4">
                   Which features do you need? (Select all that apply)
                 </label>
                 <div className="grid md:grid-cols-3 gap-3">
@@ -278,7 +278,7 @@ const ProjectQuote = () => {
 
               {/* Priority */}
               <div>
-                <label className="font-body block text-sm font-medium text-dim-gray mb-4">
+                <label className="font-body block text-sm font-medium text-black/90 mb-4">
                   Project Priority
                 </label>
                 <select
@@ -295,7 +295,7 @@ const ProjectQuote = () => {
 
               {/* Description */}
               <div>
-                <label className="font-body block text-sm font-medium text-dim-gray mb-2">
+                <label className="font-body block text-sm font-medium text-black/90 mb-2">
                   Project Description *
                 </label>
                 <textarea
@@ -313,7 +313,7 @@ const ProjectQuote = () => {
                 <button
                   type="button"
                   onClick={() => setStep(1)}
-                  className="border border-dim-gray/20 text-dim-gray px-8 py-3 rounded-full hover:border-red-ncs hover:text-red-ncs transition-colors"
+                  className="border border-dim-gray/20 text-black/90 px-8 py-3 rounded-full hover:border-red-ncs hover:text-red-ncs transition-colors"
                 >
                   Previous
                 </button>
@@ -331,11 +331,11 @@ const ProjectQuote = () => {
 
           {step === 3 && (
             <div className="space-y-8">
-              <h2 className="font-title text-2xl font-bold text-dim-gray mb-6">Contact Information</h2>
+              <h2 className="font-title text-2xl font-bold text-black/90 mb-6">Contact Information</h2>
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="font-body block text-sm font-medium text-dim-gray mb-2">
+                  <label className="font-body block text-sm font-medium text-black/90 mb-2">
                     Full Name *
                   </label>
                   <input
@@ -350,7 +350,7 @@ const ProjectQuote = () => {
                 </div>
 
                 <div>
-                  <label className="font-body block text-sm font-medium text-dim-gray mb-2">
+                  <label className="font-body block text-sm font-medium text-black/90 mb-2">
                     Email Address *
                   </label>
                   <input
@@ -365,7 +365,7 @@ const ProjectQuote = () => {
                 </div>
 
                 <div>
-                  <label className="font-body block text-sm font-medium text-dim-gray mb-2">
+                  <label className="font-body block text-sm font-medium text-black/90 mb-2">
                     Company Name
                   </label>
                   <input
@@ -379,7 +379,7 @@ const ProjectQuote = () => {
                 </div>
 
                 <div>
-                  <label className="font-body block text-sm font-medium text-dim-gray mb-2">
+                  <label className="font-body block text-sm font-medium text-black/90 mb-2">
                     Phone Number
                   </label>
                   <input
@@ -397,7 +397,7 @@ const ProjectQuote = () => {
                 <button
                   type="button"
                   onClick={() => setStep(2)}
-                  className="border border-dim-gray/20 text-dim-gray px-8 py-3 rounded-full hover:border-red-ncs hover:text-red-ncs transition-colors"
+                  className="border border-dim-gray/20 text-black/90 px-8 py-3 rounded-full hover:border-red-ncs hover:text-red-ncs transition-colors"
                 >
                   Previous
                 </button>
