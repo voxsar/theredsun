@@ -36,7 +36,7 @@ const About = () => {
           <div className="text-center mb-20">
             <h1 className="font-title text-5xl lg:text-6xl font-bold text-black/90 mb-6">About The Run Sun</h1>
             <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto leading-relaxed">
-              A leading IT solutions company in Sri Lanka, dedicated to transforming businesses through innovative technology solutions and ethical practices.
+              A global technology partner dedicated to transforming businesses through innovative solutions, ethical practices, and sustainable impact.
             </p>
           </div>
 
@@ -45,14 +45,14 @@ const About = () => {
               <div className="space-y-6">
                 <h2 className="font-title text-3xl font-bold text-black/90">Our Story</h2>
                 <p className="font-body text-black/90/70 leading-relaxed">
-                  Founded in 2016, The Run Sun emerged with a vision to bridge the digital divide in Sri Lanka. 
-                  We started as a small team of passionate technologists and have grown into a comprehensive 
-                  IT solutions provider serving businesses across various industries.
+                  Founded in 2016, The Run Sun emerged with a vision to help organizations everywhere harness the full potential of digital innovation.
+                  We started as a small team of passionate technologists and have grown into a comprehensive
+                  technology partner supporting companies across industries and continents.
                 </p>
                 <p className="font-body text-black/90/70 leading-relaxed">
-                  Our journey has been marked by continuous innovation, client success stories, and a 
-                  commitment to sustainable and ethical technology practices. Today, we're proud to be 
-                  one of Sri Lanka's most trusted IT partners.
+                  Our journey has been marked by continuous innovation, client success stories, and a
+                  commitment to sustainable and ethical technology practices. Today, we're proud to be a
+                  trusted ally to businesses navigating transformation on a global stage.
                 </p>
               </div>
             </div>
@@ -117,8 +117,8 @@ const About = () => {
             <div className="bg-white rounded-3xl p-10 shadow-lg">
               <h3 className="font-title text-3xl font-bold text-black/90 mb-6">Our Mission</h3>
               <p className="font-body text-black/90/70 leading-relaxed text-lg">
-                To empower Sri Lankan businesses with innovative, sustainable, and ethical technology solutions 
-                that drive growth, efficiency, and positive impact on society. We're committed to being the 
+                To empower organizations worldwide with innovative, sustainable, and ethical technology solutions
+                that drive growth, efficiency, and positive impact on society. We're committed to being the
                 bridge between traditional business practices and the digital future.
               </p>
             </div>
@@ -126,9 +126,9 @@ const About = () => {
             <div className="bg-white rounded-3xl p-10 shadow-lg">
               <h3 className="font-title text-3xl font-bold text-black/90 mb-6">Our Vision</h3>
               <p className="font-body text-black/90/70 leading-relaxed text-lg">
-                To be the leading technology partner in Sri Lanka, recognized for our innovation, ethical 
-                practices, and contribution to sustainable development. We envision a future where every 
-                business, regardless of size, has access to world-class technology solutions.
+                To be the trusted technology partner of choice for forward-thinking organizations across the globe,
+                recognized for our innovation, ethical practices, and contribution to sustainable development. We envision a future where every
+                business, regardless of size or geography, has access to world-class technology solutions.
               </p>
             </div>
           </div>

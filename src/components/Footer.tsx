@@ -14,14 +14,14 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
       { name: 'Careers', id: 'contact' },
     ],
     services: [
-      { name: 'Software Development', id: 'services' },
-      { name: 'Cloud Solutions', id: 'services' },
-      { name: 'AI & ML', id: 'services' },
+      { name: 'Web & App Development', id: 'services' },
+      { name: 'Multiplatform Solutions', id: 'services' },
+      { name: 'Mobile & IoT', id: 'services' },
     ],
     products: [
-      { name: 'RunSun CRM', id: 'products' },
-      { name: 'AutoFlow', id: 'products' },
-      { name: 'TeamSync', id: 'products' },
+      { name: 'NodeHR', id: 'products' },
+      { name: 'VoXL CRM', id: 'products' },
+      { name: 'World of Games', id: 'products' },
     ],
     resources: [
       { name: 'Ethical AI', id: 'ethical-ai' },
@@ -46,23 +46,23 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
                     The Red Sun
                   </button>
                   <p className="mt-4 leading-relaxed text-black">
-                    Leading IT solutions company in Sri Lanka, committed to transforming businesses
-                    through innovative technology, ethical practices, and sustainable development.
+                    Global technology partner committed to transforming businesses through innovative solutions,
+                    ethical practices, and sustainable development.
                   </p>
                 </div>
 
                 <div className="space-y-3 text-black">
                   <div className="flex items-center space-x-3">
                     <MapPin className="w-5 h-5 text-black" />
-                    <span>123 Galle Road, Colombo 03, Sri Lanka</span>
+                    <span>500 Market Street, Suite 1200, San Francisco, CA 94105</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Phone className="w-5 h-5 text-black" />
-                    <span>+94 11 234 5678</span>
+                    <span>+1 (415) 555-0123</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-black" />
-                    <span>info@therunsun.lk</span>
+                    <span>hello@theredsun.com</span>
                   </div>
                 </div>
 

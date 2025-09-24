@@ -18,7 +18,7 @@ const Sustainability = () => {
     {
       icon: <TreePine className="w-8 h-8" />,
       title: "Carbon Offset Programs",
-      description: "Active participation in reforestation projects and carbon offset initiatives across Sri Lanka.",
+      description: "Active participation in global reforestation projects and carbon offset initiatives in partnership with local communities.",
       impact: "1000+ trees planted annually",
     },
     {

@@ -25,23 +25,23 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: "Office Address",
-      details: ["123 Galle Road", "Colombo 03, Sri Lanka"],
+      title: "Global Headquarters",
+      details: ["500 Market Street", "Suite 1200", "San Francisco, CA 94105"],
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone Numbers",
-      details: ["+94 11 234 5678", "+94 77 123 4567"],
+      details: ["+1 (415) 555-0123", "+44 20 3999 5678"],
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Addresses",
-      details: ["info@therunsun.lk", "sales@therunsun.lk"],
+      details: ["hello@theredsun.com", "partnerships@theredsun.com"],
     },
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Business Hours",
-      details: ["Mon - Fri: 9:00 AM - 6:00 PM", "Sat: 9:00 AM - 1:00 PM"],
+      details: ["Mon - Fri: 9:00 AM - 6:00 PM (PST)", "Global support available 24/7"],
     },
   ];
 
@@ -174,7 +174,7 @@ const Contact = () => {
               <div className="text-center">
                 <MapPin className="w-16 h-16 text-red-ncs mx-auto mb-4" />
                 <p className="font-body text-black/90 font-medium">Interactive map would be embedded here</p>
-                <p className="font-body text-black/90/60 text-sm">123 Galle Road, Colombo 03, Sri Lanka</p>
+                <p className="font-body text-black/90/60 text-sm">500 Market Street, Suite 1200, San Francisco, CA 94105</p>
               </div>
             </div>
           </div>

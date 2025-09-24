@@ -15,7 +15,7 @@ const LogoShowcase = () => {
   <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <p className="text-2xl text-black/90 mb-8">
-            Trusted by leading companies across Sri Lanka
+            Trusted by forward-thinking companies around the world
           </p>
         </div>
 
