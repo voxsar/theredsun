@@ -31,8 +31,8 @@ const About = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-24 bg-gradient-to-br from-light-green/20 via-white to-peach/20">
-  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-orange-100 bg-gradient-to-br from-light-green/20 via-orange-100 to-peach/20">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h1 className="font-title text-5xl lg:text-6xl font-bold text-black/90 mb-6">About The Run Sun</h1>
             <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto leading-relaxed">
@@ -90,8 +90,8 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-24 bg-white">
-  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-orange-100">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-title text-4xl font-bold text-black/90 mb-6">Our Values</h2>
             <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto">
@@ -111,8 +111,8 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-24 bg-gradient-to-br from-olivine/10 to-light-green/20">
-  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-orange-100 bg-gradient-to-br from-olivine/10 to-light-green/20">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="bg-white rounded-3xl p-10 shadow-lg">
               <h3 className="font-title text-3xl font-bold text-black/90 mb-6">Our Mission</h3>

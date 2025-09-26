@@ -48,8 +48,8 @@ const Contact = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-24 bg-gradient-to-br from-red-ncs/10 via-white to-olivine/10">
-  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-orange-100 bg-gradient-to-br from-red-ncs/10 via-orange-100 to-olivine/10">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h1 className="font-title text-5xl lg:text-6xl font-bold text-black/90 mb-6">Contact Us</h1>
             <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto">
@@ -167,8 +167,8 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-16 bg-gray-100">
-  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 bg-orange-100">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl overflow-hidden shadow-lg">
             <div className="aspect-video bg-gradient-to-br from-light-green/20 to-olivine/20 flex items-center justify-center">
               <div className="text-center">

@@ -57,8 +57,8 @@ const EthicalAI = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-24 bg-gradient-to-br from-light-green/10 via-white to-light-green/20">
-  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-orange-100 bg-gradient-to-br from-light-green/10 via-orange-100 to-light-green/20">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <div className="w-20 h-20 bg-red-ncs rounded-full flex items-center justify-center mx-auto mb-6">
               <Brain className="w-10 h-10 text-white" />
@@ -102,8 +102,8 @@ const EthicalAI = () => {
       </section>
 
       {/* Principles Section */}
-      <section className="py-24 bg-white">
-  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-orange-100">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-title text-4xl font-bold text-black/90 mb-6">Our Ethical AI Principles</h2>
             <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto">
@@ -129,8 +129,8 @@ const EthicalAI = () => {
       </section>
 
       {/* Initiatives Section */}
-      <section className="py-24 bg-gradient-to-br from-olivine/10 to-light-green/20">
-  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-orange-100 bg-gradient-to-br from-olivine/10 to-light-green/20">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-title text-4xl font-bold text-black/90 mb-6">Our Initiatives</h2>
             <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto">
