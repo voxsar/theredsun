@@ -67,8 +67,8 @@ const Sustainability = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-24 bg-gradient-to-br from-light-green/20 via-white to-olivine/30">
-  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-orange-100 bg-gradient-to-br from-light-green/20 via-orange-100 to-olivine/30">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <div className="w-20 h-20 bg-olivine rounded-full flex items-center justify-center mx-auto mb-6">
               <Leaf className="w-10 h-10 text-white" />
@@ -111,8 +111,8 @@ const Sustainability = () => {
       </section>
 
       {/* Initiatives Section */}
-      <section className="py-24 bg-white">
-  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-orange-100">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-title text-4xl font-bold text-black/90 mb-6">Our Green Initiatives</h2>
             <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto">
@@ -141,8 +141,8 @@ const Sustainability = () => {
       </section>
 
       {/* Goals Timeline */}
-      <section className="py-24 bg-gray-50">
-  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-orange-100">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="font-title text-4xl font-bold text-black/90 mb-6">Sustainability Roadmap</h2>
             <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto">
@@ -170,7 +170,7 @@ const Sustainability = () => {
 
       {/* Impact Stats */}
       <section className="py-24 bg-olivine text-white">
-  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-title text-4xl font-bold mb-6">Our Environmental Impact</h2>
             <p className="font-body text-xl text-white/80 max-w-3xl mx-auto">
@@ -200,8 +200,8 @@ const Sustainability = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-br from-light-green/20 to-olivine/20">
-  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-24 bg-orange-100 bg-gradient-to-br from-light-green/20 to-olivine/20">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-title text-4xl font-bold text-black/90 mb-6">Join Our Sustainability Journey</h2>
           <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto mb-10">
             Partner with us to build sustainable technology solutions that benefit both your business and the environment.

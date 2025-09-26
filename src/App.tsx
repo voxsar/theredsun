@@ -45,9 +45,9 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-orange-100">
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      <main className="pt-16">
+      <main className="pt-16 bg-orange-100">
         {renderPage()}
       </main>
       <Footer currentPage={currentPage} setCurrentPage={setCurrentPage} />

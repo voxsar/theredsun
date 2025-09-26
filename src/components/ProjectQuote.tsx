@@ -83,7 +83,7 @@ const ProjectQuote = () => {
 
   if (step === 4) {
     return (
-      <div className="pt-20 min-h-screen bg-gradient-to-br from-light-green/20 to-olivine/20 flex items-center justify-center">
+      <div className="pt-20 min-h-screen bg-orange-100 bg-gradient-to-br from-light-green/20 to-olivine/20 flex items-center justify-center">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <div className="bg-white rounded-3xl p-12 shadow-2xl">
             <div className="w-20 h-20 bg-light-green rounded-full flex items-center justify-center mx-auto mb-8">
@@ -124,7 +124,7 @@ const ProjectQuote = () => {
   }
 
   return (
-    <div className="pt-20 min-h-screen bg-gradient-to-br from-peach/10 via-white to-red-ncs/5">
+    <div className="pt-20 min-h-screen bg-orange-100 bg-gradient-to-br from-peach/10 via-orange-100 to-red-ncs/5">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center mb-12">
           <h1 className="font-title text-5xl font-bold text-black/90 mb-6">Get Your Project Quote</h1>
