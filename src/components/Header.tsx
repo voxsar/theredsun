@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                 { name: 'Services', id: 'services' },
                 { name: 'Products', id: 'products' },
                 { name: 'Ethical AI', id: 'ethical-ai' },
-                { name: 'Sustainability', id: 'sustainability' },
+                { name: 'Employee Welfare', id: 'employee-welfare' },
                 { name: 'Tech Stacks', id: 'tech-stacks' },
                 { name: 'Contact', id: 'contact' },
         ];
@@ -28,6 +28,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
         ];
 
         const isStackPage = currentPage === 'tech-stacks' || currentPage.startsWith('tech-stack');
+
 
         return (
                 <header className="fixed top-0 left-0 right-0 z-50 bg-orange-100">

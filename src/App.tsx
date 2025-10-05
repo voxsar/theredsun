@@ -8,7 +8,7 @@ import Products from './components/Products';
 import About from './components/About';
 import Contact from './components/Contact';
 import EthicalAI from './components/EthicalAI';
-import Sustainability from './components/Sustainability';
+import EmployeeWelfare from './components/EmployeeWelfare';
 import ProjectQuote from './components/ProjectQuote';
 import Footer from './components/Footer';
 import TechStacks from './components/TechStacks';
@@ -32,8 +32,8 @@ function App() {
         return <Contact />;
       case 'ethical-ai':
         return <EthicalAI />;
-      case 'sustainability':
-        return <Sustainability />;
+      case 'employee-welfare':
+        return <EmployeeWelfare />;
       case 'quote':
         return <ProjectQuote />;
       case 'tech-stacks':

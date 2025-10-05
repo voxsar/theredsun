@@ -27,7 +27,7 @@ const VideoSection = () => {
               <p className="text-xl font-body text-black/90/70 leading-relaxed">
                 For over 8 years, we've been at the forefront of digital transformation,
                 helping businesses embrace innovative technologies while maintaining ethical practices
-                and sustainable growth.
+                and people-centered growth.
               </p>
             </div>
 
@@ -45,9 +45,9 @@ const VideoSection = () => {
               <div className="flex items-start space-x-4">
                 <div className="w-2 h-2 bg-olivine rounded-full mt-3 flex-shrink-0"></div>
                 <div>
-                  <h3 className="font-title font-semibold text-black/90 mb-2">Ethical & Sustainable</h3>
+                  <h3 className="font-title font-semibold text-black/90 mb-2">Ethical & Employee-Owned</h3>
                   <p className="font-body text-black/90/70">
-                    Every solution we build considers its impact on society and the environment.
+                    Every solution we build considers its impact on our people, rewarding teams who power lasting results.
                   </p>
                 </div>
               </div>

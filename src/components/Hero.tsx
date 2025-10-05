@@ -105,26 +105,26 @@ const Hero = () => {
 					<div>
 						<div className="rounded-[1.25rem] bg-[#efe6db] p-6 lg:p-8">{/* Outer beige container now sits directly in the main page container for matching box width */}
 							<div className="grid gap-6 lg:grid-cols-12 items-center">
-								<div className="lg:col-span-7">
-									<h2 className="text-4xl lg:text-5xl font-title font-black text-[#1b1b1b]">Anthropic Economic Index</h2>
-									<p className="mt-4 text-base lg:text-2xl text-[#2b2b2b] leading-relaxed max-w-3xl">The Anthropic Economic Index aims to understand AI’s effects on the labor market and broader economy over time. The latest report provides the clearest picture yet of how AI is being incorporated into real-world tasks across the modern economy.</p>
-								</div>
+                                                                <div className="lg:col-span-7">
+                                                                        <h2 className="text-4xl lg:text-5xl font-title font-black text-[#1b1b1b]">Red Sun Innovation Outlook</h2>
+                                                                        <p className="mt-4 text-base lg:text-2xl text-[#2b2b2b] leading-relaxed max-w-3xl">Red Sun’s Innovation Outlook tracks how responsible automation, storytelling, and design are shaping resilient organisations. Dive into the latest pulse on ethical technology adoption and human-centred growth.</p>
+                                                                </div>
 
-								<div className="lg:col-span-5 flex gap-4 lg:gap-6">
-									<button className="flex-1 rounded-2xl bg-[#d9d0c6] p-6 text-left border border-transparent hover:bg-[#d2c7bb] transition-colors">
-										<div className="flex items-center justify-between">
-											<span className="text-3xl text-[#1b1b1b]">Read the report</span>
-											<span aria-hidden className="text-2xl">→</span>
-										</div>
-									</button>
+                                                                <div className="lg:col-span-5 flex gap-4 lg:gap-6">
+                                                                        <a href="https://theredsun.global/innovation-outlook" className="flex-1 rounded-2xl bg-[#d9d0c6] p-6 text-left border border-transparent hover:bg-[#d2c7bb] transition-colors" target="_blank" rel="noreferrer">
+                                                                                <div className="flex items-center justify-between">
+                                                                                        <span className="text-3xl text-[#1b1b1b]">View the outlook</span>
+                                                                                        <span aria-hidden className="text-2xl">→</span>
+                                                                                </div>
+                                                                        </a>
 
-									<button className="flex-1 rounded-2xl bg-[#d9d0c6] p-6 text-left border border-transparent hover:bg-[#d2c7bb] transition-colors">
-										<div className="flex items-center justify-between">
-											<span className="text-3xl text-[#1b1b1b]">Explore and download the data</span>
-											<span aria-hidden className="text-2xl">→</span>
-										</div>
-									</button>
-								</div>
+                                                                        <a href="https://theredsun.global/data-atlas" className="flex-1 rounded-2xl bg-[#d9d0c6] p-6 text-left border border-transparent hover:bg-[#d2c7bb] transition-colors" target="_blank" rel="noreferrer">
+                                                                                <div className="flex items-center justify-between">
+                                                                                        <span className="text-3xl text-[#1b1b1b]">Access the data atlas</span>
+                                                                                        <span aria-hidden className="text-2xl">→</span>
+                                                                                </div>
+                                                                        </a>
+                                                                </div>
 							</div>
 						</div>
 					</div>
