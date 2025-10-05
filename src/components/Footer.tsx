@@ -25,7 +25,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
     ],
     resources: [
       { name: 'Ethical AI', id: 'ethical-ai' },
-      { name: 'Sustainability', id: 'sustainability' },
+      { name: 'Employee Welfare', id: 'employee-welfare' },
       { name: 'Contact', id: 'contact' },
     ],
   };
@@ -47,7 +47,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
                   </button>
                   <p className="mt-4 leading-relaxed text-black">
                     Global technology partner committed to transforming businesses through innovative solutions,
-                    ethical practices, and sustainable development.
+                    ethical practices, and shared prosperity for our employee-owners.
                   </p>
                 </div>
 

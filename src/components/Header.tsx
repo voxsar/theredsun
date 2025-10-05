@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
 		{ name: 'Services', id: 'services' },
 		{ name: 'Products', id: 'products' },
 		{ name: 'Ethical AI', id: 'ethical-ai' },
-		{ name: 'Sustainability', id: 'sustainability' },
+                { name: 'Employee Welfare', id: 'employee-welfare' },
 		{ name: 'Contact', id: 'contact' },
 	];
 
