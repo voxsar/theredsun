@@ -7,27 +7,51 @@ const Services = () => {
   const services = [
     {
       icon: <Code className="w-8 h-8" />,
-      title: "Web & Application Development",
-      description: "Design and development of immersive web experiences and robust business applications.",
-      features: ["Experience Design", "Full-Stack Engineering", "API Development", "Ongoing Enhancements"],
-    },
-    {
-      icon: <Cloud className="w-8 h-8" />,
-      title: "Multiplatform Solutions",
-      description: "Unified codebases that deliver consistent experiences across web, desktop, and emerging platforms.",
-      features: ["Cross-Platform Frameworks", "Progressive Web Apps", "Desktop Packaging", "Performance Optimization"],
+      title: "Visionary Web Application Engineering",
+      description:
+        "We imagine ethical, human web experiences that scale across LEAN, MEAN, LAMP, and WAMP stacks without losing soul.",
+      features: [
+        "Ethical architecture reviews across LEAN, MEAN, LAMP, and WAMP foundations",
+        "C#, PHP, and JavaScript/ECMAScript framework fluency that empowers every sprint",
+        "Human-centered journey mapping that keeps teams inspired and accountable",
+        "Imaginative accessibility and analytics enhancements woven into each release",
+      ],
     },
     {
       icon: <Smartphone className="w-8 h-8" />,
-      title: "Mobile App Development",
-      description: "Native and hybrid mobile applications tailored to deliver intuitive user journeys.",
-      features: ["Product Strategy", "iOS & Android Delivery", "Mobile QA", "Lifecycle Management"],
+      title: "Empowering Mobile Experience Design",
+      description:
+        "Our imaginative mobile artisans craft native and hybrid journeys that feel visionary, inclusive, and trustworthy.",
+      features: [
+        "Objective-C and Swift craftsmanship for ethically minded iOS launches",
+        "Java, Kotlin, and Flutter brilliance delivering empowering Android stories",
+        "Cross-platform mentoring that keeps code humane and imaginative",
+        "Human insight labs that translate field feedback into delightful iterations",
+      ],
+    },
+    {
+      icon: <Cloud className="w-8 h-8" />,
+      title: "Desktop Continuity & Cloud Harmony",
+      description:
+        "We unite visionary desktop craftsmanship with cloud imagination so every touchpoint remains grounded, secure, and kind.",
+      features: [
+        "C# and .NET packaging that keeps Windows ecosystems empowering and reliable",
+        "Electron and progressive desktop experiences grown from ethical JavaScript cores",
+        "Lean automation that synchronizes updates without compromising trust",
+        "Human support rituals that celebrate teams while safeguarding every device",
+      ],
     },
     {
       icon: <Cpu className="w-8 h-8" />,
-      title: "Middleware & IoT",
-      description: "Integration layers and IoT ecosystems that connect devices, data, and enterprise services.",
-      features: ["Edge Computing", "Device Management", "Real-time Data Streams", "Secure Integrations"],
+      title: "Product Engineering & Automation",
+      description:
+        "We accelerate products with imaginative automation that honors people, amplifies impact, and respects every ecosystem.",
+      features: [
+        "End-to-end product acceleration spanning LEAN, MEAN, LAMP, and WAMP landscapes",
+        "Ethical automation pipelines blending C#, PHP, and ECMAScript ingenuity",
+        "AI-assisted instrumentation with human oversight for visionary resilience",
+        "Empowering workshops that align stakeholders around compassionate innovation",
+      ],
     },
   ];
 
