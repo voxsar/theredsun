@@ -11,20 +11,29 @@ const About = () => {
 
   const values = [
     {
-      title: "Innovation First",
-      description: "We embrace cutting-edge technologies and innovative approaches to solve complex business challenges.",
+      title: "Exploration",
+      description:
+        "We venture beyond the expected, pursuing curiosity and experimentation to reveal new possibilities for the people we serve.",
     },
     {
-      title: "Client Success",
-      description: "Our success is measured by the success of our clients. We're committed to delivering exceptional value.",
+      title: "Wisdom",
+      description:
+        "We ground every decision in insight, blending research, experience, and empathy so our guidance is as thoughtful as it is bold.",
     },
     {
-      title: "Ethical Practices",
-      description: "We conduct business with integrity, transparency, and respect for all stakeholders.",
+      title: "Creativity",
+      description:
+        "We transform complex challenges into artful solutions, crafting stories and systems that resonate emotionally and perform beautifully.",
     },
     {
-      title: "Sustainability",
-      description: "We're committed to creating sustainable technology solutions that benefit both business and environment.",
+      title: "Unity",
+      description:
+        "We collaborate across disciplines and backgrounds, weaving diverse perspectives into momentum that elevates every collaboration.",
+    },
+    {
+      title: "Optimism",
+      description:
+        "We champion a brighter future, choosing hope and possibility as catalysts for meaningful, lasting progress.",
     },
   ];
 
@@ -34,9 +43,9 @@ const About = () => {
       <section className="py-24 bg-orange-100 bg-gradient-to-br from-light-green/20 via-orange-100 to-peach/20">
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h1 className="font-title text-5xl lg:text-6xl font-bold text-black/90 mb-6">About The Run Sun</h1>
+            <h1 className="font-title text-5xl lg:text-6xl font-bold text-black/90 mb-6">About The Red Sun</h1>
             <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto leading-relaxed">
-              A global technology partner dedicated to transforming businesses through innovative solutions, ethical practices, and sustainable impact.
+              The Red Sun is a collective of strategists, storytellers, and technologists illuminating the path from inspired idea to trusted experience.
             </p>
           </div>
 
@@ -45,14 +54,13 @@ const About = () => {
               <div className="space-y-6">
                 <h2 className="font-title text-3xl font-bold text-black/90">Our Story</h2>
                 <p className="font-body text-black/90/70 leading-relaxed">
-                  Founded in 2016, The Run Sun emerged with a vision to help organizations everywhere harness the full potential of digital innovation.
-                  We started as a small team of passionate technologists and have grown into a comprehensive
-                  technology partner supporting companies across industries and continents.
+                  Born from a collaboration between dreamers and doers, The Red Sun began as a tight-knit studio helping mission-led brands bring their boldest visions to life. What started in a single sunlit loft has evolved into a global practice where creativity, craftsmanship, and care converge.
                 </p>
                 <p className="font-body text-black/90/70 leading-relaxed">
-                  Our journey has been marked by continuous innovation, client success stories, and a
-                  commitment to sustainable and ethical technology practices. Today, we're proud to be a
-                  trusted ally to businesses navigating transformation on a global stage.
+                  Our journey is guided by curious minds, compassionate partnerships, and a devotion to building with integrity. Today, we stand beside organizations around the world who are ready to imagine brighter possibilities and move toward them with confidence.
+                </p>
+                <p className="font-body text-black/90/70 leading-relaxed">
+                  This is the heart of The Red Sun—where imagination meets integrity—and every engagement is an invitation to create meaningful change together.
                 </p>
               </div>
             </div>
@@ -60,7 +68,7 @@ const About = () => {
             <div className="relative">
               <img
                 src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="The Run Sun team"
+                alt="The Red Sun team"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-red-ncs rounded-full opacity-20"></div>
@@ -72,7 +80,7 @@ const About = () => {
 
       {/* Stats Section */}
       <section className="py-16 bg-dim-gray text-white">
-  <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
@@ -117,18 +125,14 @@ const About = () => {
             <div className="bg-white rounded-3xl p-10 shadow-lg">
               <h3 className="font-title text-3xl font-bold text-black/90 mb-6">Our Mission</h3>
               <p className="font-body text-black/90/70 leading-relaxed text-lg">
-                To empower organizations worldwide with innovative, sustainable, and ethical technology solutions
-                that drive growth, efficiency, and positive impact on society. We're committed to being the
-                bridge between traditional business practices and the digital future.
+                To light the way for visionaries with storytelling, strategy, and technology that honor every stakeholder, turning daring ideas into experiences people can believe in.
               </p>
             </div>
 
             <div className="bg-white rounded-3xl p-10 shadow-lg">
               <h3 className="font-title text-3xl font-bold text-black/90 mb-6">Our Vision</h3>
               <p className="font-body text-black/90/70 leading-relaxed text-lg">
-                To be the trusted technology partner of choice for forward-thinking organizations across the globe,
-                recognized for our innovation, ethical practices, and contribution to sustainable development. We envision a future where every
-                business, regardless of size or geography, has access to world-class technology solutions.
+                To cultivate a world where imagination and integrity move in unison, illuminating brighter futures for the communities and causes we champion.
               </p>
             </div>
           </div>
