@@ -11,6 +11,11 @@ import EthicalAI from './components/EthicalAI';
 import Sustainability from './components/Sustainability';
 import ProjectQuote from './components/ProjectQuote';
 import Footer from './components/Footer';
+import TechStacks from './components/TechStacks';
+import LeanStack from './components/tech-stacks/LeanStack';
+import MeanStack from './components/tech-stacks/MeanStack';
+import LampStack from './components/tech-stacks/LampStack';
+import WampStack from './components/tech-stacks/WampStack';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -20,7 +25,7 @@ function App() {
       case 'about':
         return <About />;
       case 'services':
-        return <Services />;
+        return <Services setCurrentPage={setCurrentPage} />;
       case 'products':
         return <Products />;
       case 'contact':
@@ -31,13 +36,23 @@ function App() {
         return <Sustainability />;
       case 'quote':
         return <ProjectQuote />;
+      case 'tech-stacks':
+        return <TechStacks setCurrentPage={setCurrentPage} />;
+      case 'tech-stack-lean':
+        return <LeanStack setCurrentPage={setCurrentPage} />;
+      case 'tech-stack-mean':
+        return <MeanStack setCurrentPage={setCurrentPage} />;
+      case 'tech-stack-lamp':
+        return <LampStack setCurrentPage={setCurrentPage} />;
+      case 'tech-stack-wamp':
+        return <WampStack setCurrentPage={setCurrentPage} />;
       default:
         return (
           <>
             <Hero />
             <LogoShowcase />
             <VideoSection />
-            <Services />
+            <Services setCurrentPage={setCurrentPage} />
             <Products />
           </>
         );
