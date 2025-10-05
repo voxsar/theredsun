@@ -50,7 +50,12 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
                     onClick={() => setCurrentPage('home')}
                     className="text-2xl font-bold text-black transition-opacity hover:opacity-80"
                   >
-                    The Red Sun
+                    
+					<img 
+							src="/src/Red Sun Logo_Main Extended Horizontal Logo.svg" 
+							alt="The Red Sun" 
+							className="h-24 w-auto"
+					/>
                   </button>
                   <p className="mt-4 leading-relaxed text-black">
                     Global technology partner committed to transforming businesses through innovative solutions,
@@ -61,15 +66,15 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
                 <div className="space-y-3 text-black">
                   <div className="flex items-center space-x-3">
                     <MapPin className="w-5 h-5 text-black" />
-                    <span>500 Market Street, Suite 1200, San Francisco, CA 94105</span>
+                    <span>Colombo, Sri Lanka</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Phone className="w-5 h-5 text-black" />
-                    <span>+1 (415) 555-0123</span>
+                    <span>+94 77 43 95 913</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-black" />
-                    <span>hello@theredsun.com</span>
+                    <span>info@theredsun.com</span>
                   </div>
                 </div>
 

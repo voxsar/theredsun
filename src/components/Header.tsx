@@ -37,9 +37,13 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                                         <div className="flex items-center">
                                                 <button
                                                         onClick={() => setCurrentPage('home')}
-                                                        className="text-2xl font-title font-bold text-black transition-opacity hover:opacity-80"
+                                                        className="transition-opacity hover:opacity-80"
                                                 >
-                                                        THE RED S/N
+                                                        <img 
+                                                                src="/src/Red Sun Logo_Main Extended Horizontal Logo.svg" 
+                                                                alt="The Red Sun" 
+                                                                className="h-16 w-auto"
+                                                        />
                                                 </button>
                                         </div>
 

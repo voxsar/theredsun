@@ -26,17 +26,17 @@ const Contact = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Global Headquarters",
-      details: ["500 Market Street", "Suite 1200", "San Francisco, CA 94105"],
+      details: ["Colombo, Sri Lanka"],
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone Numbers",
-      details: ["+1 (415) 555-0123", "+44 20 3999 5678"],
+      details: ["+94 77 43 95 913", "+94 70 43 95 913"],
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Addresses",
-      details: ["hello@theredsun.com", "partnerships@theredsun.com"],
+      details: ["info@theredsun.com", "miyuru@theredsun.com"],
     },
     {
       icon: <Clock className="w-6 h-6" />,
