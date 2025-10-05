@@ -1,57 +1,65 @@
 import React, { useState } from 'react';
 import { Code, Cloud, Cpu, Smartphone } from 'lucide-react';
 
-const Services = () => {
+interface ServicesProps {
+  setCurrentPage: (page: string) => void;
+}
+
+const Services: React.FC<ServicesProps> = ({ setCurrentPage }) => {
   const [hoveredService, setHoveredService] = useState<number | null>(null);
 
   const services = [
     {
       icon: <Code className="w-8 h-8" />,
-      title: "Visionary Web Application Engineering",
+      title: 'LEAN Stack Launchpads',
       description:
-        "We imagine ethical, human web experiences that scale across LEAN, MEAN, LAMP, and WAMP stacks without losing soul.",
+        'Launch human-centred MVPs with our LEAN experimentation squads guiding research, product strategy, and responsible automation.',
       features: [
-        "Ethical architecture reviews across LEAN, MEAN, LAMP, and WAMP foundations",
-        "C#, PHP, and JavaScript/ECMAScript framework fluency that empowers every sprint",
-        "Human-centered journey mapping that keeps teams inspired and accountable",
-        "Imaginative accessibility and analytics enhancements woven into each release",
+        'Design sprint facilitation, journey mapping, and inclusive research rituals',
+        'Serverless and headless engineering to validate ideas quickly',
+        'Telemetry starter kits and analytics that spotlight insight-rich signals',
+        'Innovation governance frameworks that respect your values',
       ],
+      target: 'tech-stack-lean',
     },
     {
       icon: <Smartphone className="w-8 h-8" />,
-      title: "Empowering Mobile Experience Design",
+      title: 'MEAN Stack Experience Platforms',
       description:
-        "Our imaginative mobile artisans craft native and hybrid journeys that feel visionary, inclusive, and trustworthy.",
+        'Shape cohesive TypeScript products that scale globally with real-time collaboration, personalisation, and accessible design systems.',
       features: [
-        "Objective-C and Swift craftsmanship for ethically minded iOS launches",
-        "Java, Kotlin, and Flutter brilliance delivering empowering Android stories",
-        "Cross-platform mentoring that keeps code humane and imaginative",
-        "Human insight labs that translate field feedback into delightful iterations",
+        'TypeScript-first engineering spanning MongoDB, Express, Angular, and Node',
+        'Design system operations with inclusive component libraries',
+        'Automated quality pipelines covering performance and accessibility',
+        'Cloud optimisation strategies that reduce cost and carbon',
       ],
+      target: 'tech-stack-mean',
     },
     {
       icon: <Cloud className="w-8 h-8" />,
-      title: "Desktop Continuity & Cloud Harmony",
+      title: 'LAMP Stack Revitalisation',
       description:
-        "We unite visionary desktop craftsmanship with cloud imagination so every touchpoint remains grounded, secure, and kind.",
+        'Modernise PHP ecosystems with composable architectures, accessibility enhancements, and automation that respects governance.',
       features: [
-        "C# and .NET packaging that keeps Windows ecosystems empowering and reliable",
-        "Electron and progressive desktop experiences grown from ethical JavaScript cores",
-        "Lean automation that synchronizes updates without compromising trust",
-        "Human support rituals that celebrate teams while safeguarding every device",
+        'Laravel, Symfony, and WordPress engineering guided by domain-driven design',
+        'Composable CMS integrations with marketing and data platforms',
+        'WCAG 2.2 AA accessibility audits baked into releases',
+        'Blue-green deployment pipelines and observability dashboards',
       ],
+      target: 'tech-stack-lamp',
     },
     {
       icon: <Cpu className="w-8 h-8" />,
-      title: "Product Engineering & Automation",
+      title: 'WAMP Stack Modernisation',
       description:
-        "We accelerate products with imaginative automation that honors people, amplifies impact, and respects every ecosystem.",
+        'Connect Windows-native ecosystems with secure portals, field service tooling, and IoT command centres that feel effortless.',
       features: [
-        "End-to-end product acceleration spanning LEAN, MEAN, LAMP, and WAMP landscapes",
-        "Ethical automation pipelines blending C#, PHP, and ECMAScript ingenuity",
-        "AI-assisted instrumentation with human oversight for visionary resilience",
-        "Empowering workshops that align stakeholders around compassionate innovation",
+        'Azure, IIS, and on-premises integration for hybrid environments',
+        'Single sign-on, MFA, and zero-trust architecture expertise',
+        'Offline-first app design for rugged devices and field teams',
+        'Lifecycle automation for packaging, updates, and monitoring',
       ],
+      target: 'tech-stack-wamp',
     },
   ];
 
@@ -93,7 +101,10 @@ const Services = () => {
                 ))}
               </ul>
               
-              <button className="mt-6 text-red-ncs font-title font-medium hover:text-red-ncs/80 transition-colors group-hover:translate-x-2 transition-transform inline-flex items-center">
+              <button
+                onClick={() => setCurrentPage(service.target)}
+                className="mt-6 text-red-ncs font-title font-medium hover:text-red-ncs/80 transition-colors group-hover:translate-x-2 transition-transform inline-flex items-center"
+              >
                 Learn More
                 <span className="ml-2">→</span>
               </button>

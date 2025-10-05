@@ -28,6 +28,13 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
       { name: 'Employee Welfare', id: 'employee-welfare' },
       { name: 'Contact', id: 'contact' },
     ],
+    stacks: [
+      { name: 'Overview', id: 'tech-stacks' },
+      { name: 'LEAN Stack', id: 'tech-stack-lean' },
+      { name: 'MEAN Stack', id: 'tech-stack-mean' },
+      { name: 'LAMP Stack', id: 'tech-stack-lamp' },
+      { name: 'WAMP Stack', id: 'tech-stack-wamp' },
+    ],
   };
 
   return (
@@ -89,7 +96,7 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
               </div>
 
               {/* Navigation Links */}
-              <div className="grid gap-10 md:grid-cols-3 lg:col-span-3">
+              <div className="grid gap-10 md:grid-cols-3 lg:grid-cols-4 lg:col-span-3">
                 <div>
                   <h3 className="text-lg font-semibold mb-4 text-black">Company</h3>
                   <ul className="space-y-2">
@@ -126,6 +133,22 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
                   <h3 className="text-lg font-semibold mb-4 text-black">Resources</h3>
                   <ul className="space-y-2 text-black">
                     {navigation.resources.map((item) => (
+                      <li key={item.name}>
+                        <button
+                          onClick={() => setCurrentPage(item.id)}
+                          className="text-black transition-opacity hover:opacity-80"
+                        >
+                          {item.name}
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-lg font-semibold mb-4 text-black">Tech Stacks</h3>
+                  <ul className="space-y-2 text-black">
+                    {navigation.stacks.map((item) => (
                       <li key={item.name}>
                         <button
                           onClick={() => setCurrentPage(item.id)}
