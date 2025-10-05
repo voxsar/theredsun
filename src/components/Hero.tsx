@@ -4,26 +4,26 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const Hero = () => {
 	const [currentSlide, setCurrentSlide] = useState(0);
 
-	const slides = [
-		{
-			title: 'Comprehensive IT solutions for modern businesses',
-			subtitle: 'Transforming businesses with technology',
-			description:
-				'We deliver comprehensive IT services and products that drive digital transformation and accelerate business growth.',
-		},
-		{
-			title: 'Environmentally conscious tech innovations',
-			subtitle: 'Building a greener digital future',
-			description:
-				'Our commitment to sustainability drives us to create eco-friendly solutions that benefit both business and environment.',
-		},
-		{
-			title: 'AI research and products that put safety at the frontier',
-			subtitle: 'Responsible artificial intelligence for all',
-			description:
-				'We develop AI solutions with ethics at the core, ensuring fairness, transparency, and positive impact on society.',
-		},
-	];
+        const slides = [
+                {
+                        title: 'Charting the digital cosmos with purpose',
+                        subtitle: 'Technology + ethics + imagination',
+                        description:
+                                'We guide visionary partners through the digital cosmos, blending ethical AI and imaginative storytelling into every experience.',
+                },
+                {
+                        title: 'Empowering businesses to thrive responsibly',
+                        subtitle: 'Mission-driven partnerships',
+                        description:
+                                'Our team equips organisations with diverse stacks and playbooks so ethical AI becomes a catalyst for growth, trust, and narrative resonance.',
+                },
+                {
+                        title: 'Diverse stacks, fearless products',
+                        subtitle: 'Technology that feels human',
+                        description:
+                                'From modular platforms to story-led services, we orchestrate technology, ethics, and imagination into offerings that empower businesses to stand apart.',
+                },
+        ];
 
 	useEffect(() => {
 		const timer = setInterval(() => {
