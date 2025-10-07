@@ -37,27 +37,6 @@ const EmployeeWelfare = () => {
     },
   ];
 
-  const metrics = [
-    { label: 'Team Equity Participation', value: '94%' },
-    { label: 'Average Bonus Uplift', value: '18.4%' },
-    { label: 'Retention After Year 5', value: '89%' },
-  ];
-
-  const testimonials = [
-    {
-      quote:
-        'Being a shareholder has changed how I approach every client challenge—we make choices that sustain people and profit together.',
-      name: 'Priya K.',
-      role: 'Lead Product Strategist',
-    },
-    {
-      quote:
-        'The welfare programs let me pause, learn, and return stronger. I truly feel invested in and empowered to co-create our future.',
-      name: 'Miguel S.',
-      role: 'Senior Platform Engineer',
-    },
-  ];
-
   return (
     <section className="bg-orange-100">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-10 py-24 space-y-20">
@@ -88,36 +67,32 @@ const EmployeeWelfare = () => {
         <div className="rounded-[3rem] bg-black text-white p-12 lg:p-16 relative overflow-hidden">
           <div className="absolute -top-12 -right-12 w-48 h-48 bg-red-ncs/40 blur-3xl rounded-full" aria-hidden />
           <div className="absolute -bottom-16 -left-10 w-64 h-64 bg-olivine/40 blur-3xl rounded-full" aria-hidden />
-          <div className="relative grid gap-12 lg:grid-cols-[1.2fr_1fr] items-center">
+          <div className="relative grid gap-12 lg:grid-cols-[1.2fr_1fr] items-start">
             <div className="space-y-6">
               <h2 className="font-title text-4xl font-bold">Shared Ownership in Action</h2>
               <p className="text-lg text-white/80 leading-relaxed">
                 From inclusive planning sessions to open profit dashboards, we design transparency into every workflow. Our governance handbook is written with our teams and updated quarterly, making shared ownership a living practice.
               </p>
-              <div className="grid sm:grid-cols-3 gap-4">
-                {metrics.map((metric) => (
-                  <div
-                    key={metric.label}
-                    className="rounded-2xl border border-white/10 bg-white/5 p-6 text-center"
-                  >
-                    <div className="text-3xl font-title font-semibold text-white">{metric.value}</div>
-                    <div className="text-sm uppercase tracking-wide text-white/70 mt-2">{metric.label}</div>
-                  </div>
-                ))}
+              <div className="space-y-4">
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+                  <h3 className="font-title text-2xl font-semibold text-white">How We Share Information</h3>
+                  <p className="mt-2 text-white/80 leading-relaxed">
+                    Quarterly town halls, open-budget reviews, and published meeting summaries keep every team member informed about our ownership roadmap and stewardship decisions.
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+                  <h3 className="font-title text-2xl font-semibold text-white">Participation Opportunities</h3>
+                  <p className="mt-2 text-white/80 leading-relaxed">
+                    Employees contribute to policy councils, equity planning workshops, and peer mentoring programs to shape how ownership benefits evolve.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="space-y-6">
-              {testimonials.map((testimonial) => (
-                <div
-                  key={testimonial.name}
-                  className="rounded-3xl bg-white/10 border border-white/10 p-6"
-                >
-                  <p className="text-lg leading-relaxed text-white/90">“{testimonial.quote}”</p>
-                  <div className="mt-4 text-sm uppercase tracking-wide text-white/70">
-                    {testimonial.name} · {testimonial.role}
-                  </div>
-                </div>
-              ))}
+            <div className="rounded-3xl bg-white/10 border border-white/10 p-6 space-y-4">
+              <h3 className="font-title text-2xl font-semibold text-white">Stay Informed</h3>
+              <p className="text-white/80 leading-relaxed">
+                Explore our internal resource hub for governance updates, FAQs, and recordings of ownership briefings. Team members can also reach the stewardship working group through internal channels for questions about participation or benefits.
+              </p>
             </div>
           </div>
         </div>
