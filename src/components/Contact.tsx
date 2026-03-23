@@ -31,12 +31,12 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone Numbers",
-      details: ["+94 77 43 95 913", "+94 70 43 95 913"],
+      details: ["+94 70 43 95 913"],
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Addresses",
-      details: ["info@theredsun.com", "miyuru@theredsun.com"],
+      details: ["info@theredsun.com"],
     },
     {
       icon: <Clock className="w-6 h-6" />,
