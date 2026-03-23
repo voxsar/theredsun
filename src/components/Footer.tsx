@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
 
 interface FooterProps {
   currentPage: string;
@@ -67,10 +67,6 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
                   <div className="flex items-center space-x-3">
                     <MapPin className="w-5 h-5 text-black" />
                     <span>Colombo, Sri Lanka</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Phone className="w-5 h-5 text-black" />
-                    <span>+94 77 43 95 913</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-black" />
