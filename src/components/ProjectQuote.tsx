@@ -70,6 +70,8 @@ const ProjectQuote = () => {
   ];
 
   const timelineOptions = [
+    { id: 'under-4w', label: 'Under 4 weeks', value: 'under-4w' },
+    { id: '4-8w', label: '4-8 weeks', value: '4-8w' },
     { id: '1-3', label: '1-3 months', value: '1-3' },
     { id: '3-6', label: '3-6 months', value: '3-6' },
     { id: '6-12', label: '6-12 months', value: '6-12' },
