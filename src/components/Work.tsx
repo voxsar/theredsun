@@ -52,7 +52,7 @@ const Work: React.FC<WorkProps> = ({ setCurrentPage }) => {
                         src={shot.src}
                         alt={shot.alt}
                         loading="lazy"
-                        className="aspect-video w-full rounded-xl border border-black/10 bg-black object-cover object-center"
+                        className="aspect-video w-full rounded-xl border border-black/10 bg-black object-contain"
                       />
                       <figcaption className="font-body text-sm text-black/60">{shot.caption}</figcaption>
                     </figure>
