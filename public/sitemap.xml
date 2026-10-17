@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://theredsun.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://theredsun.com/sun-pearl/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://theredsun.com/sun-pearl/sun-pearl-hero.jpg</image:loc>
+      <image:title>Sun Pearl sparkling passionfruit and strawberry boba</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://theredsun.com/sun-pearl/passionfruit-boba-soda.jpg</image:loc>
+      <image:title>Passionfruit Pearl sparkling bubble tea</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://theredsun.com/sun-pearl/strawberry-boba-soda.jpg</image:loc>
+      <image:title>Strawberry Pearl sparkling bubble tea</image:title>
+    </image:image>
+  </url>
+</urlset>

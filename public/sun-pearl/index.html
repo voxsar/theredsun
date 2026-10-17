@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/svg+xml" href="/redsun-logo-vertical.svg" />
+
+	<title>Sun Pearl by The Red Sun — Sparkling Passionfruit &amp; Strawberry Boba Tea in Colombo</title>
+	<meta name="description"
+		content="Sun Pearl by The Red Sun makes sparkling bubble tea in two flavours — Passionfruit Pearl and Strawberry Pearl. Fizzy lemon-lime soda base, real fruit, and chewy black tapioca boba pearls. Delivery in Colombo, Sri Lanka. Boba milk tea coming soon." />
+	<meta name="keywords"
+		content="Sun Pearl, Sun Pearl boba, The Red Sun, bubble tea Colombo, boba tea Colombo, boba delivery Sri Lanka, passionfruit bubble tea, strawberry bubble tea, sparkling boba soda, tapioca pearls, fruit tea, bubble tea delivery" />
+	<link rel="canonical" href="https://theredsun.com/sun-pearl/" />
+	<meta name="robots" content="index, follow, max-image-preview:large" />
+	<meta name="theme-color" content="#bf1e2e" />
+
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Sun Pearl by The Red Sun" />
+	<meta property="og:title" content="Sun Pearl by The Red Sun — Sparkling Passionfruit &amp; Strawberry Boba" />
+	<meta property="og:description"
+		content="Two flavours, done properly. Fizzy lemon-lime soda, real fruit, and chewy black tapioca pearls. Order boba in Colombo." />
+	<meta property="og:url" content="https://theredsun.com/sun-pearl/" />
+	<meta property="og:image" content="https://theredsun.com/sun-pearl/sun-pearl-hero.jpg" />
+	<meta property="og:image:width" content="1536" />
+	<meta property="og:image:height" content="1024" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Sun Pearl by The Red Sun — Sparkling Passionfruit &amp; Strawberry Boba" />
+	<meta name="twitter:description"
+		content="Two flavours, done properly. Fizzy lemon-lime soda, real fruit, and chewy black tapioca pearls." />
+	<meta name="twitter:image" content="https://theredsun.com/sun-pearl/sun-pearl-hero.jpg" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preload" as="image" href="/sun-pearl/sun-pearl-hero.jpg" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Sansation:ital,wght@0,300;0,400;0,700&display=swap" />
+
+	<style>
+		:root {
+			--red: #bf1e2e;
+			--ink: #1a1210;
+			--muted: #6e6e6e;
+			--cream: #fdf1e3;
+			--cream-deep: #f7e2cc;
+			--peach: #f4b393;
+			--passion: #e8a317;
+			--berry: #d6304a;
+			--line: rgba(26, 18, 16, .12);
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+		body {
+			margin: 0;
+			background: var(--cream);
+			color: var(--ink);
+			font-family: Neuton, Georgia, serif;
+			font-size: 19px;
+			line-height: 1.65;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		img {
+			max-width: 100%;
+			display: block;
+		}
+
+		a {
+			color: inherit;
+		}
+
+		.wrap {
+			width: 100%;
+			max-width: 1120px;
+			margin: 0 auto;
+			padding: 0 24px;
+		}
+
+		.eyebrow {
+			font-family: Sansation, system-ui, sans-serif;
+			font-size: 12px;
+			font-weight: 700;
+			letter-spacing: .34em;
+			text-transform: uppercase;
+			color: var(--red);
+			margin: 0 0 18px;
+		}
+
+		h1,
+		h2,
+		h3 {
+			font-weight: 800;
+			line-height: 1.08;
+			letter-spacing: -.015em;
+			margin: 0;
+		}
+
+		h1 {
+			font-size: clamp(42px, 7.5vw, 78px);
+		}
+
+		h2 {
+			font-size: clamp(30px, 4.6vw, 46px);
+		}
+
+		h3 {
+			font-size: clamp(24px, 3.2vw, 32px);
+		}
+
+		p {
+			margin: 0 0 18px;
+		}
+
+		.lede {
+			font-size: clamp(19px, 2.1vw, 23px);
+			color: #3a2c28;
+			max-width: 56ch;
+		}
+
+		/* ---------- top bar ---------- */
+		.topbar {
+			border-bottom: 1px solid var(--line);
+			background: rgba(253, 241, 227, .92);
+			backdrop-filter: blur(8px);
+			position: sticky;
+			top: 0;
+			z-index: 40;
+		}
+
+		.topbar .wrap {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 16px;
+			min-height: 68px;
+		}
+
+		.topbar img {
+			height: 46px;
+			width: auto;
+		}
+
+		.topbar .by {
+			font-family: Sansation, sans-serif;
+			font-size: 11px;
+			letter-spacing: .26em;
+			text-transform: uppercase;
+			color: var(--muted);
+		}
+
+		/* ---------- hero ---------- */
+		.hero {
+			position: relative;
+			overflow: hidden;
+			background:
+				radial-gradient(900px 520px at 78% 18%, rgba(244, 179, 147, .55), transparent 65%),
+				linear-gradient(180deg, #fff7ec 0%, var(--cream) 100%);
+		}
+
+		.hero .wrap {
+			display: grid;
+			grid-template-columns: 1.05fr .95fr;
+			gap: 52px;
+			align-items: center;
+			padding-top: 72px;
+			padding-bottom: 72px;
+		}
+
+		.sunmark {
+			display: inline-flex;
+			align-items: center;
+			gap: 10px;
+			font-family: Sansation, sans-serif;
+			font-size: 12px;
+			letter-spacing: .3em;
+			text-transform: uppercase;
+			color: var(--red);
+			border: 1px solid rgba(191, 30, 46, .3);
+			border-radius: 999px;
+			padding: 7px 16px;
+			margin-bottom: 22px;
+		}
+
+		.sunmark .dot {
+			width: 9px;
+			height: 9px;
+			border-radius: 50%;
+			background: var(--red);
+		}
+
+		.hero h1 em {
+			font-style: normal;
+			color: var(--red);
+		}
+
+		.hero-img {
+			border-radius: 22px;
+			overflow: hidden;
+			box-shadow: 0 30px 70px -28px rgba(26, 18, 16, .45);
+		}
+
+		.btn-row {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 14px;
+			margin-top: 28px;
+		}
+
+		.btn {
+			font-family: Sansation, sans-serif;
+			font-size: 14px;
+			letter-spacing: .06em;
+			text-decoration: none;
+			padding: 13px 26px;
+			border-radius: 999px;
+			border: 1px solid var(--ink);
+			transition: .18s ease;
+			display: inline-block;
+		}
+
+		.btn-solid {
+			background: var(--red);
+			border-color: var(--red);
+			color: #fff;
+		}
+
+		.btn-solid:hover {
+			background: transparent;
+			color: var(--red);
+		}
+
+		.btn-ghost:hover {
+			background: #fff;
+		}
+
+		/* ---------- sections ---------- */
+		section {
+			padding: 86px 0;
+		}
+
+		.section-head {
+			max-width: 60ch;
+			margin-bottom: 48px;
+		}
+
+		.menu {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 34px;
+		}
+
+		.card {
+			background: #fff;
+			border: 1px solid var(--line);
+			border-radius: 22px;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			transition: transform .2s ease, box-shadow .2s ease;
+		}
+
+		.card:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 26px 50px -30px rgba(26, 18, 16, .5);
+		}
+
+		.card figure {
+			margin: 0;
+			background: #fff;
+			border-bottom: 1px solid var(--line);
+		}
+
+		.card-body {
+			padding: 30px 30px 34px;
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.tag {
+			font-family: Sansation, sans-serif;
+			font-size: 11px;
+			letter-spacing: .26em;
+			text-transform: uppercase;
+			padding: 5px 13px;
+			border-radius: 999px;
+			display: inline-block;
+			margin-bottom: 14px;
+			align-self: flex-start;
+		}
+
+		.tag-passion {
+			background: rgba(232, 163, 23, .16);
+			color: #96650a;
+		}
+
+		.tag-berry {
+			background: rgba(214, 48, 74, .14);
+			color: var(--berry);
+		}
+
+		.card h3 {
+			margin-bottom: 12px;
+		}
+
+		.card p {
+			color: #4a3a35;
+		}
+
+		.spec {
+			list-style: none;
+			margin: 18px 0 0;
+			padding: 18px 0 0;
+			border-top: 1px solid var(--line);
+			font-family: Sansation, sans-serif;
+			font-size: 13.5px;
+			color: var(--muted);
+			display: grid;
+			gap: 9px;
+		}
+
+		.spec li {
+			display: flex;
+			gap: 10px;
+		}
+
+		.spec li::before {
+			content: "";
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background: var(--red);
+			flex: none;
+			margin-top: 8px;
+		}
+
+		/* ---------- how it is made ---------- */
+		.made {
+			background: var(--cream-deep);
+			border-top: 1px solid var(--line);
+			border-bottom: 1px solid var(--line);
+		}
+
+		.steps {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 30px;
+			counter-reset: s;
+		}
+
+		.step {
+			counter-increment: s;
+		}
+
+		.step::before {
+			content: counter(s, decimal-leading-zero);
+			font-family: Sansation, sans-serif;
+			font-size: 13px;
+			letter-spacing: .2em;
+			color: var(--red);
+			display: block;
+			margin-bottom: 12px;
+		}
+
+		.step h3 {
+			font-size: 23px;
+			margin-bottom: 8px;
+		}
+
+		.step p {
+			color: #4a3a35;
+			font-size: 18px;
+			margin: 0;
+		}
+
+		/* ---------- coming soon ---------- */
+		.soon .wrap {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 48px;
+			align-items: center;
+		}
+
+		.soon-card {
+			background: #fff;
+			border: 1px dashed rgba(191, 30, 46, .45);
+			border-radius: 22px;
+			padding: 38px;
+		}
+
+		/* ---------- order ---------- */
+		.order {
+			background: var(--ink);
+			color: #f6ece2;
+		}
+
+		.order .eyebrow {
+			color: var(--peach);
+		}
+
+		.order .lede {
+			color: #e3d4c8;
+		}
+
+		.order .btn {
+			border-color: #f6ece2;
+			color: #f6ece2;
+		}
+
+		.order .btn-solid {
+			background: var(--red);
+			border-color: var(--red);
+			color: #fff;
+		}
+
+		.order .btn-solid:hover {
+			background: transparent;
+			color: #fff;
+		}
+
+		.order .btn-ghost:hover {
+			background: rgba(255, 255, 255, .1);
+		}
+
+		.facts {
+			list-style: none;
+			padding: 0;
+			margin: 30px 0 0;
+			display: grid;
+			gap: 12px;
+			font-family: Sansation, sans-serif;
+			font-size: 14.5px;
+			color: #cdbcae;
+		}
+
+		footer {
+			padding: 40px 0;
+			font-family: Sansation, sans-serif;
+			font-size: 13px;
+			color: var(--muted);
+		}
+
+		footer .wrap {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 14px;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		footer a {
+			color: var(--red);
+			text-decoration: none;
+		}
+
+		footer a:hover {
+			text-decoration: underline;
+		}
+
+		@media (max-width: 880px) {
+
+			.hero .wrap,
+			.soon .wrap {
+				grid-template-columns: 1fr;
+				gap: 36px;
+			}
+
+			.menu,
+			.steps {
+				grid-template-columns: 1fr;
+			}
+
+			section {
+				padding: 60px 0;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="topbar">
+		<div class="wrap">
+			<a href="/" aria-label="The Red Sun"><img src="/redsun-logo-horizontal.svg" alt="The Red Sun" /></a>
+			<span class="by">Sun Pearl · Colombo</span>
+		</div>
+	</div>
+
+	<header class="hero">
+		<div class="wrap">
+			<div>
+				<span class="sunmark"><span class="dot"></span> Sun Pearl by The Red Sun</span>
+				<h1>Sparkling boba,<br />made in <em>two flavours</em>.</h1>
+				<p class="lede" style="margin-top:24px">
+					Sun Pearl is a small-batch bubble tea kitchen in Colombo. We pour a cold, fizzy
+					lemon-lime soda base over real fruit and a deep layer of chewy black tapioca
+					pearls. Two flavours only — Passionfruit Pearl and Strawberry Pearl — because we
+					would rather make two drinks properly than twelve badly.
+				</p>
+				<div class="btn-row">
+					<a class="btn btn-solid" href="#menu">See the menu</a>
+					<a class="btn btn-ghost" href="#order">How to order</a>
+				</div>
+			</div>
+			<div class="hero-img">
+				<img src="/sun-pearl/sun-pearl-hero.jpg" width="1536" height="1024" fetchpriority="high"
+					alt="Passionfruit and strawberry sparkling bubble tea cups from Sun Pearl, layered with black tapioca pearls" />
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section id="menu">
+			<div class="wrap">
+				<div class="section-head">
+					<p class="eyebrow">The menu</p>
+					<h2>Two drinks. Both fizzy, both loaded with pearls.</h2>
+					<p class="lede" style="margin-top:18px">
+						Every cup is built to order: tapioca pearls cooked fresh and steeped in brown
+						sugar syrup, real fruit, ice, and a sparkling lemon-lime soda base poured on top.
+					</p>
+				</div>
+
+				<div class="menu">
+					<article class="card">
+						<figure>
+							<img src="/sun-pearl/passionfruit-boba-soda.jpg" width="1024" height="1024" loading="lazy"
+								alt="Passionfruit Pearl — sparkling passionfruit bubble tea with black tapioca boba pearls in a clear cup" />
+						</figure>
+						<div class="card-body">
+							<span class="tag tag-passion">Passionfruit</span>
+							<h3>Passionfruit Pearl</h3>
+							<p>
+								Sharp, tropical and properly fizzy. Real passionfruit pulp and seeds stirred
+								through a sparkling lemon-lime soda base, over ice, with a thick layer of
+								brown-sugar tapioca pearls at the bottom.
+							</p>
+							<ul class="spec">
+								<li>Sparkling lemon-lime soda base</li>
+								<li>Real passionfruit pulp &amp; seeds</li>
+								<li>Brown sugar black tapioca pearls</li>
+								<li>Served iced, dome lid, wide boba straw</li>
+							</ul>
+						</div>
+					</article>
+
+					<article class="card">
+						<figure>
+							<img src="/sun-pearl/strawberry-boba-soda.jpg" width="1024" height="1024" loading="lazy"
+								alt="Strawberry Pearl — sparkling strawberry bubble tea with black tapioca boba pearls in a clear cup" />
+						</figure>
+						<div class="card-body">
+							<span class="tag tag-berry">Strawberry</span>
+							<h3>Strawberry Pearl</h3>
+							<p>
+								Sweet, bright and ruby red. Crushed strawberry through a sparkling lemon-lime
+								soda base, over ice, finished with the same deep layer of chewy brown-sugar
+								tapioca pearls.
+							</p>
+							<ul class="spec">
+								<li>Sparkling lemon-lime soda base</li>
+								<li>Crushed real strawberry</li>
+								<li>Brown sugar black tapioca pearls</li>
+								<li>Served iced, dome lid, wide boba straw</li>
+							</ul>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="made">
+			<div class="wrap">
+				<div class="section-head">
+					<p class="eyebrow">How it is made</p>
+					<h2>Three steps, no shortcuts.</h2>
+				</div>
+				<div class="steps">
+					<div class="step">
+						<h3>Pearls cooked fresh</h3>
+						<p>Black tapioca is boiled in small batches through the day and rested in brown
+							sugar syrup, so it stays soft and chewy rather than hard in the middle.</p>
+					</div>
+					<div class="step">
+						<h3>Real fruit, not powder</h3>
+						<p>Passionfruit pulp and crushed strawberry go in by hand. You can see the seeds
+							and the fruit in the cup, because they are actually there.</p>
+					</div>
+					<div class="step">
+						<h3>Soda poured last</h3>
+						<p>The sparkling lemon-lime base goes in over ice at the very end, so the drink
+							reaches you still fizzing instead of flat.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="soon">
+			<div class="wrap">
+				<div>
+					<p class="eyebrow">Coming next</p>
+					<h2>Boba milk tea is on the way.</h2>
+					<p class="lede" style="margin-top:18px">
+						Classic milk tea with the same brown-sugar pearls is in development and will join
+						the menu once we are happy with it. Sparkling first, creamy next.
+					</p>
+				</div>
+				<div class="soon-card">
+					<p class="eyebrow">In development</p>
+					<h3 style="margin-bottom:14px">Classic Boba Milk Tea</h3>
+					<p style="margin:0;color:#4a3a35">
+						Brewed tea, milk, brown sugar tapioca pearls. Not on the menu yet — we will add it
+						here and to our delivery listing the day it is ready.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="order" id="order">
+			<div class="wrap">
+				<p class="eyebrow">Where to find us</p>
+				<h2>Order Sun Pearl boba in Colombo.</h2>
+				<p class="lede" style="margin-top:18px">
+					Sun Pearl is a delivery-first bubble tea kitchen. Search for
+					<strong>“Sun Pearl”</strong> on your delivery app, or get in touch with us directly
+					for bulk, office and event orders.
+				</p>
+				<ul class="facts">
+					<li>Cuisine — Bubble tea, boba, fruit soda, desserts &amp; drinks</li>
+					<li>Service — Delivery and pickup, Colombo, Sri Lanka</li>
+					<li>Operated by The Red Sun</li>
+				</ul>
+				<div class="btn-row">
+					<a class="btn btn-solid"
+						href="mailto:info@theredsun.com?subject=Sun%20Pearl%20order">Email an order</a>
+					<a class="btn btn-ghost" href="/">The Red Sun</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="wrap">
+			<span>© <span id="y">2026</span> Sun Pearl — a brand of The Red Sun, Colombo, Sri Lanka.</span>
+			<span><a href="/">theredsun.com</a> · <a href="mailto:info@theredsun.com">info@theredsun.com</a></span>
+		</div>
+	</footer>
+
+	<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+				"@type": "Restaurant",
+				"@id": "https://theredsun.com/sun-pearl/#business",
+				"name": "Sun Pearl by The Red Sun",
+				"alternateName": ["Sun Pearl", "Sun Pearl Boba", "Sun Pearl Bubble Tea"],
+				"description": "Sun Pearl by The Red Sun is a delivery-first bubble tea kitchen in Colombo serving sparkling passionfruit and strawberry boba with brown sugar black tapioca pearls.",
+				"url": "https://theredsun.com/sun-pearl/",
+				"image": "https://theredsun.com/sun-pearl/sun-pearl-hero.jpg",
+				"servesCuisine": ["Bubble Tea", "Boba", "Beverages", "Desserts"],
+				"email": "info@theredsun.com",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Colombo",
+					"addressCountry": "LK"
+				},
+				"parentOrganization": {
+					"@type": "Organization",
+					"name": "The Red Sun",
+					"url": "https://theredsun.com/"
+				},
+				"hasMenu": { "@id": "https://theredsun.com/sun-pearl/#menu" }
+			},
+			{
+				"@type": "Menu",
+				"@id": "https://theredsun.com/sun-pearl/#menu",
+				"name": "Sun Pearl Menu",
+				"url": "https://theredsun.com/sun-pearl/#menu",
+				"hasMenuSection": {
+					"@type": "MenuSection",
+					"name": "Sparkling Boba",
+					"description": "Fizzy lemon-lime soda based bubble tea with brown sugar black tapioca pearls.",
+					"hasMenuItem": [
+						{
+							"@type": "MenuItem",
+							"name": "Passionfruit Pearl",
+							"description": "Sparkling passionfruit bubble tea — real passionfruit pulp and seeds over a fizzy lemon-lime soda base, iced, with brown sugar black tapioca boba pearls.",
+							"image": "https://theredsun.com/sun-pearl/passionfruit-boba-soda.jpg",
+							"suitableForDiet": "https://schema.org/VegetarianDiet"
+						},
+						{
+							"@type": "MenuItem",
+							"name": "Strawberry Pearl",
+							"description": "Sparkling strawberry bubble tea — crushed real strawberry over a fizzy lemon-lime soda base, iced, with brown sugar black tapioca boba pearls.",
+							"image": "https://theredsun.com/sun-pearl/strawberry-boba-soda.jpg",
+							"suitableForDiet": "https://schema.org/VegetarianDiet"
+						}
+					]
+				}
+			},
+			{
+				"@type": "WebPage",
+				"@id": "https://theredsun.com/sun-pearl/",
+				"name": "Sun Pearl by The Red Sun — Sparkling Passionfruit & Strawberry Boba Tea",
+				"isPartOf": { "@type": "WebSite", "name": "The Red Sun", "url": "https://theredsun.com/" },
+				"about": { "@id": "https://theredsun.com/sun-pearl/#business" }
+			}
+		]
+	}
+	</script>
+</body>
+
+</html>
