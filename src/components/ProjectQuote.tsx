@@ -62,6 +62,7 @@ const ProjectQuote = () => {
   ];
 
   const budgetRanges = [
+    { id: 'starter', label: 'Under LKR 500K', value: 'starter' },
     { id: 'small', label: 'LKR 500K - 1M', value: 'small' },
     { id: 'medium', label: 'LKR 1M - 3M', value: 'medium' },
     { id: 'large', label: 'LKR 3M - 5M', value: 'large' },
