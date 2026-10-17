@@ -12,8 +12,6 @@ const stacks = [
     tagline: 'Rapid validation with empathetic user discovery and lean delivery rituals.',
     description:
       'Ideal for ventures exploring new markets or internal teams seeking to test concepts quickly. Our LEAN practice pairs iterative product coaching with purposeful automation to keep launches human-centred.',
-    image:
-      'https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=1200&q=80',
     highlights: [
       'Design sprints paired with ethical AI research loops',
       'Cross-functional pods guiding MVPs from concept to insight',
@@ -27,8 +25,6 @@ const stacks = [
     tagline: 'Cloud-native JavaScript platforms crafted for immersive, scalable digital journeys.',
     description:
       'Our MEAN specialists shape cohesive TypeScript experiences across MongoDB, Express, Angular, and Node. We coach teams to evolve multi-channel products with responsibility and imagination.',
-    image:
-      'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80',
     highlights: [
       'Full-stack TypeScript acceleration with shared design systems',
       'Realtime collaboration and media streaming accelerators',
@@ -42,8 +38,6 @@ const stacks = [
     tagline: 'Modernised PHP ecosystems infused with automation, accessibility, and trust.',
     description:
       'We rejuvenate mission-critical platforms with Laravel, WordPress, and bespoke PHP frameworks. Our approach balances reliability, compliance, and captivating storytelling.',
-    image:
-      'https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=1200&q=80',
     highlights: [
       'Composable content architectures and globalised localisation',
       'Commerce, membership, and community accelerators',
@@ -57,8 +51,6 @@ const stacks = [
     tagline: 'Windows-native craftsmanship connecting desktop, mobile, and IoT experiences.',
     description:
       'From industrial control rooms to field service, our WAMP engineering unifies Windows, Apache, MySQL, and PHP with modern UX and low-code augmentation.',
-    image:
-      'https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=1200&q=80',
     highlights: [
       'Secure intranet and partner portals with Azure Active Directory',
       'Offline-first field applications and rugged device enablement',
@@ -90,7 +82,7 @@ const TechStacks: React.FC<TechStacksProps> = ({ setCurrentPage }) => {
               key={stack.id}
               className="relative overflow-hidden rounded-3xl border border-black/10 bg-white shadow-[0_20px_60px_-25px_rgba(0,0,0,0.25)]"
             >
-              <div className="grid md:grid-cols-[1.2fr_1fr]">
+              <div>
                 <div className="p-10 flex flex-col justify-between space-y-10">
                   <div className="space-y-6">
                     <div className="inline-flex items-center space-x-2 text-sm uppercase tracking-[0.2em] text-red-ncs/80">
@@ -119,16 +111,6 @@ const TechStacks: React.FC<TechStacksProps> = ({ setCurrentPage }) => {
                       <ArrowRight className="w-5 h-5" />
                     </button>
                   </div>
-                </div>
-                <div className="relative h-full min-h-[280px]">
-                  <div
-                    className="absolute inset-0"
-                    style={{
-                      backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.45)), url(${stack.image})`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'center',
-                    }}
-                  />
                 </div>
               </div>
             </article>

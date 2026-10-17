@@ -69,7 +69,7 @@ const Services: React.FC<ServicesProps> = ({ setCurrentPage }) => {
         <div className="text-center mb-20">
           <h2 className="text-5xl font-title font-bold text-black/90 mb-6">Our Services</h2>
           <p className="text-xl font-body text-black/90/70 max-w-3xl mx-auto">
-            We provide comprehensive digital services that help organizations innovate, scale, and create meaningful customer experiences.
+            We work in four stacks, and we will tell you which one your problem actually needs before any code is written.
           </p>
         </div>
 
@@ -113,8 +113,11 @@ const Services: React.FC<ServicesProps> = ({ setCurrentPage }) => {
         </div>
 
         <div className="text-center mt-16">
-          <button className="bg-red-ncs text-white px-8 py-4 rounded-full hover:bg-red-ncs/90 transition-colors font-title font-medium">
-            View All Services
+          <button
+            onClick={() => setCurrentPage('quote')}
+            className="bg-red-ncs text-white px-8 py-4 rounded-full hover:bg-red-ncs/90 transition-colors font-title font-medium"
+          >
+            Scope a project with us
           </button>
         </div>
       </div>

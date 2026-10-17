@@ -12,7 +12,6 @@ const LampStack: React.FC<StackProps> = ({ setCurrentPage }) => {
       kicker="PHP revitalisation"
       headline="Sustainable platforms powered by modern PHP craftsmanship"
       description="From heritage intranets to global publishing platforms, we evolve LAMP estates with automation, accessibility, and security at the core."
-      heroImage="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80"
       appTypes={[
         {
           title: 'Digital publishing ecosystems',

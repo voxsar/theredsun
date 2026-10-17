@@ -13,7 +13,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                 { name: 'Home', id: 'home' },
                 { name: 'About', id: 'about' },
                 { name: 'Services', id: 'services' },
-                { name: 'Products', id: 'products' },
+                { name: 'Work', id: 'work' },
                 { name: 'Ethical AI', id: 'ethical-ai' },
                 { name: 'Employee Welfare', id: 'employee-welfare' },
                 { name: 'Tech Stacks', id: 'tech-stacks' },
@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
                                                         className="transition-opacity hover:opacity-80"
                                                 >
                                                         <img 
-                                                                src="/src/Red Sun Logo_Main Extended Horizontal Logo.svg" 
+                                                                src="/redsun-logo-horizontal.svg" 
                                                                 alt="The Red Sun" 
                                                                 className="h-16 w-auto"
                                                         />

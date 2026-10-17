@@ -35,22 +35,26 @@ const EthicalAI = () => {
     },
   ];
 
-  const initiatives = [
+  const inPractice = [
     {
-      title: "AI Ethics Committee",
-      description: "Internal committee that reviews all AI projects for ethical compliance and potential societal impact.",
+      title: "Structured output, not free text",
+      description:
+        "When we read handwritten student capture cards with a vision model, it answers against a strict schema into named fields. A model that must fill seven defined fields is a model you can check.",
     },
     {
-      title: "Bias Detection & Mitigation",
-      description: "Systematic processes to identify and eliminate bias in training data and algorithmic decision-making.",
+      title: "The result is stored and reviewable",
+      description:
+        "Extracted data lands in a database as rows a person can open, correct and export — never presented to a user as fact the moment it comes back from a model.",
     },
     {
-      title: "Community Engagement",
-      description: "Regular engagement with local communities to understand the impact of our AI solutions on society.",
+      title: "AI assists the judgement, it does not replace it",
+      description:
+        "In assessment and scoring work, the model prepares and explains; the decision that affects someone stays with a person who can see how it was reached.",
     },
     {
-      title: "Continuous Monitoring",
-      description: "Ongoing monitoring of deployed AI systems to ensure they continue to operate ethically and effectively.",
+      title: "We say no to the cases that do not fit",
+      description:
+        "Where a model's error rate would land on the person it is used against rather than on us, we recommend the deterministic solution instead, even when it is the less impressive demo.",
     },
   ];
 
@@ -65,7 +69,7 @@ const EthicalAI = () => {
             </div>
             <h1 className="font-title text-5xl lg:text-6xl font-bold text-black/90 mb-6">Ethical AI</h1>
             <p className="font-body text-xl text-black/90/70 max-w-4xl mx-auto leading-relaxed">
-              At The Run Sun, we believe that artificial intelligence should be developed and deployed responsibly, 
+              At The Red Sun, we believe that artificial intelligence should be developed and deployed responsibly, 
               with ethics and human welfare at the forefront of every decision we make.
             </p>
           </div>
@@ -88,14 +92,19 @@ const EthicalAI = () => {
               </div>
             </div>
 
-            <div className="relative">
-              <img
-                src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Ethical AI development"
-                className="w-full h-96 object-cover rounded-2xl shadow-2xl"
-              />
-              <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-olivine rounded-full opacity-20"></div>
-              <div className="absolute -top-6 -left-6 w-16 h-16 bg-light-green rounded-full opacity-30"></div>
+            <div className="rounded-3xl border border-black/10 bg-white p-10">
+              <p className="font-body text-sm uppercase tracking-[0.25em] text-red-ncs">A worked example</p>
+              <h3 className="font-title mt-4 text-2xl font-bold text-black/90">
+                Reading handwriting, without pretending to be certain
+              </h3>
+              <p className="font-body mt-5 text-black/90/70 leading-relaxed">
+                Our capture card system reads scanned, handwritten student forms with a vision model. It
+                answers against a strict JSON schema into seven named fields, and every card is stored as a
+                row a person can open, correct and export.
+              </p>
+              <p className="font-body mt-4 text-black/90/70 leading-relaxed">
+                The model removes the retyping. It does not get the final word on what a student wrote.
+              </p>
             </div>
           </div>
         </div>
@@ -132,17 +141,17 @@ const EthicalAI = () => {
       <section className="py-24 bg-orange-100 bg-gradient-to-br from-olivine/10 to-light-green/20">
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="font-title text-4xl font-bold text-black/90 mb-6">Our Initiatives</h2>
+            <h2 className="font-title text-4xl font-bold text-black/90 mb-6">What this looks like in practice</h2>
             <p className="font-body text-xl text-black/90/70 max-w-3xl mx-auto">
-              We've implemented several initiatives to ensure our AI development process remains ethical and responsible.
+              Principles are easy to publish. Here is how they constrain the AI features we actually ship.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {initiatives.map((initiative, index) => (
+            {inPractice.map((item, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg">
-                <h3 className="font-title text-2xl font-bold text-black/90 mb-4">{initiative.title}</h3>
-                <p className="font-body text-black/90/70 leading-relaxed">{initiative.description}</p>
+                <h3 className="font-title text-2xl font-bold text-black/90 mb-4">{item.title}</h3>
+                <p className="font-body text-black/90/70 leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -157,13 +166,13 @@ const EthicalAI = () => {
             Ready to implement AI solutions that are both powerful and ethical? Let's work together 
             to create technology that benefits everyone.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-red-ncs text-white px-8 py-4 rounded-full hover:bg-red-ncs/90 transition-colors">
+          <div className="flex justify-center">
+            <a
+              href="mailto:info@theredsun.com?subject=AI%20project%20enquiry"
+              className="bg-red-ncs text-white px-8 py-4 rounded-full hover:bg-red-ncs/90 transition-colors"
+            >
               Discuss Your AI Project
-            </button>
-            <button className="border border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-black/90 transition-colors">
-              Download AI Ethics Guide
-            </button>
+            </a>
           </div>
         </div>
       </section>

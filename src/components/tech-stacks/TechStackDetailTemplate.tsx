@@ -16,7 +16,6 @@ export interface TechStackDetailTemplateProps {
   kicker: string;
   headline: string;
   description: string;
-  heroImage: string;
   appTypes: AppType[];
   capabilities: string[];
   accelerators: string[];
@@ -29,7 +28,6 @@ const TechStackDetailTemplate: React.FC<TechStackDetailTemplateProps> = ({
   kicker,
   headline,
   description,
-  heroImage,
   appTypes,
   capabilities,
   accelerators,
@@ -55,21 +53,10 @@ const TechStackDetailTemplate: React.FC<TechStackDetailTemplateProps> = ({
         </div>
 
         <div className="relative overflow-hidden rounded-[3rem] border border-black/10 bg-white">
-          <div
-            className="relative h-72 w-full"
-            style={{
-              backgroundImage: `linear-gradient(180deg, rgba(12,12,12,0.1) 0%, rgba(12,12,12,0.5) 100%), url(${heroImage})`,
-              backgroundPosition: 'center',
-              backgroundSize: 'cover',
-            }}
-          >
-            <div className="absolute inset-0 flex items-end">
-              <div className="w-full p-10 text-white">
-                <p className="text-sm uppercase tracking-[0.4em] text-white/80">{kicker}</p>
-                <h1 className="mt-4 text-4xl md:text-5xl font-title font-bold">{headline}</h1>
-                <p className="mt-4 max-w-3xl text-lg text-white/85">{description}</p>
-              </div>
-            </div>
+          <div className="bg-black p-10 text-white md:p-14">
+            <p className="text-sm uppercase tracking-[0.4em] text-white/70">{kicker}</p>
+            <h1 className="mt-4 text-4xl md:text-5xl font-title font-bold">{headline}</h1>
+            <p className="mt-4 max-w-3xl text-lg text-white/80">{description}</p>
           </div>
 
           <div className="grid gap-10 p-10 md:grid-cols-[1.1fr_0.9fr]">
@@ -124,12 +111,6 @@ const TechStackDetailTemplate: React.FC<TechStackDetailTemplateProps> = ({
                 </button>
               )}
 
-              <div className="rounded-3xl border border-dashed border-red-ncs/40 bg-white p-8 text-sm text-black/70">
-                <p>
-                  Need to explore adjacent stacks? Return to the Tech Stacks landing to mix-and-match approaches for hybrid
-                  programmes.
-                </p>
-              </div>
             </div>
           </div>
         </div>

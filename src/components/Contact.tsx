@@ -16,32 +16,46 @@ const Contact = () => {
     });
   };
 
+  // No backend is wired up yet, so the form hands off to the visitor's mail client
+  // rather than silently discarding what they typed.
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
+    const subject = `Enquiry from ${formData.name}${formData.company ? ` (${formData.company})` : ''}`;
+    const body = [
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      formData.company ? `Company: ${formData.company}` : null,
+      '',
+      formData.message,
+    ]
+      .filter((line) => line !== null)
+      .join('\n');
+
+    window.location.href = `mailto:info@theredsun.com?subject=${encodeURIComponent(
+      subject,
+    )}&body=${encodeURIComponent(body)}`;
   };
 
   const contactInfo = [
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: "Global Headquarters",
+      title: "Office",
       details: ["Colombo, Sri Lanka"],
     },
     {
       icon: <Phone className="w-6 h-6" />,
-      title: "Phone Numbers",
+      title: "Phone",
       details: ["+94 70 43 95 913"],
     },
     {
       icon: <Mail className="w-6 h-6" />,
-      title: "Email Addresses",
+      title: "Email",
       details: ["info@theredsun.com"],
     },
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Business Hours",
-      details: ["Mon - Fri: 9:00 AM - 6:00 PM (PST)", "Global support available 24/7"],
+      details: ["Mon - Fri: 9:00 AM - 6:00 PM (+05:30)"],
     },
   ];
 
@@ -166,20 +180,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-16 bg-orange-100">
-        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl overflow-hidden shadow-lg">
-            <div className="aspect-video bg-gradient-to-br from-light-green/20 to-olivine/20 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-16 h-16 text-red-ncs mx-auto mb-4" />
-                <p className="font-body text-black/90 font-medium">Interactive map would be embedded here</p>
-                <p className="font-body text-black/90/60 text-sm">500 Market Street, Suite 1200, San Francisco, CA 94105</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

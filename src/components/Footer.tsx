@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 
 interface FooterProps {
   currentPage: string;
@@ -10,18 +10,13 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
   const navigation = {
     company: [
       { name: 'About Us', id: 'about' },
-      { name: 'Our Team', id: 'about' },
-      { name: 'Careers', id: 'contact' },
+      { name: 'Selected Work', id: 'work' },
+      { name: 'Get a Quote', id: 'quote' },
     ],
     services: [
-      { name: 'Web & App Development', id: 'services' },
-      { name: 'Multiplatform Solutions', id: 'services' },
-      { name: 'Mobile & IoT', id: 'services' },
-    ],
-    products: [
-      { name: 'NodeHR', id: 'products' },
-      { name: 'VoXL CRM', id: 'products' },
-      { name: 'World of Games', id: 'products' },
+      { name: 'All Services', id: 'services' },
+      { name: 'Tech Stacks', id: 'tech-stacks' },
+      { name: 'Contact', id: 'contact' },
     ],
     resources: [
       { name: 'Ethical AI', id: 'ethical-ai' },
@@ -52,14 +47,14 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
                   >
                     
 					<img 
-							src="/src/Red Sun Logo_Main Extended Horizontal Logo.svg" 
+							src="/redsun-logo-horizontal.svg" 
 							alt="The Red Sun" 
 							className="h-24 w-auto"
 					/>
                   </button>
                   <p className="mt-4 leading-relaxed text-black">
-                    Global technology partner committed to transforming businesses through innovative solutions,
-                    ethical practices, and shared prosperity for our employee-owners.
+                    A Colombo-based software practice building point of sale and inventory systems, learning
+                    platforms and ecommerce services — and maintaining them once they are live.
                   </p>
                 </div>
 
@@ -74,26 +69,6 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
                   </div>
                 </div>
 
-                <div className="flex space-x-4">
-                  <a
-                    href="#"
-                    className="w-11 h-11 rounded-full border border-black flex items-center justify-center bg-orange-100 transition-colors hover:bg-orange-200"
-                  >
-                    <Facebook className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="#"
-                    className="w-11 h-11 rounded-full border border-black flex items-center justify-center bg-orange-100 transition-colors hover:bg-orange-200"
-                  >
-                    <Twitter className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="#"
-                    className="w-11 h-11 rounded-full border border-black flex items-center justify-center bg-orange-100 transition-colors hover:bg-orange-200"
-                  >
-                    <Linkedin className="w-5 h-5" />
-                  </a>
-                </div>
               </div>
 
               {/* Navigation Links */}
@@ -167,13 +142,14 @@ const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
             <div className="mt-12 border-t border-black/10 pt-8">
               <div className="flex flex-col gap-4 text-black md:flex-row md:items-center md:justify-between">
                 <p className="text-sm text-black">
-                  © 2024 The Red Sun (Pvt) Ltd. All rights reserved.
+                  © {new Date().getFullYear()} The Red Sun (Pvt) Ltd. All rights reserved.
                 </p>
-                <div className="flex space-x-6 text-sm text-black">
-                  <a href="#" className="transition-opacity hover:opacity-80">Privacy Policy</a>
-                  <a href="#" className="transition-opacity hover:opacity-80">Terms of Service</a>
-                  <a href="#" className="transition-opacity hover:opacity-80">Cookie Policy</a>
-                </div>
+                <a
+                  href="mailto:info@theredsun.com"
+                  className="text-sm text-black transition-opacity hover:opacity-80"
+                >
+                  info@theredsun.com
+                </a>
               </div>
             </div>
           </div>

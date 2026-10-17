@@ -12,7 +12,6 @@ const WampStack: React.FC<StackProps> = ({ setCurrentPage }) => {
       kicker="Windows-first delivery"
       headline="Connected enterprise experiences across Windows, web, and edge"
       description="We modernise Windows-native ecosystems by uniting PHP, .NET, and device management disciplines. Our WAMP teams harmonise enterprise authentication with beautiful, reliable UX."
-      heroImage="https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=1600&q=80"
       appTypes={[
         {
           title: 'Employee and partner portals',

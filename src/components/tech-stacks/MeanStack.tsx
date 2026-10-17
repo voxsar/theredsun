@@ -12,7 +12,6 @@ const MeanStack: React.FC<StackProps> = ({ setCurrentPage }) => {
       kicker="Full-stack JavaScript"
       headline="Composable TypeScript platforms that scale with your audience"
       description="Our MEAN guild blends product strategy, design systems, and cloud automation to nurture resilient customer experiences. We help teams unlock velocity across MongoDB, Express, Angular, and Node."
-      heroImage="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=1600&q=80"
       appTypes={[
         {
           title: 'Digital experience platforms',

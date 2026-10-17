@@ -12,7 +12,6 @@ const LeanStack: React.FC<StackProps> = ({ setCurrentPage }) => {
       kicker="Lean experimentation"
       headline="Human-centred MVPs that learn in weeks, not quarters"
       description="We partner with founders and intrapreneurs to validate propositions with empathy. From hypothesis design to continuous delivery, our LEAN squads keep feedback loops short and purposeful."
-      heroImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80"
       appTypes={[
         {
           title: 'Customer discovery platforms',

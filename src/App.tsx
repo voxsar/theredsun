@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import LogoShowcase from './components/LogoShowcase';
-import VideoSection from './components/VideoSection';
+import WorkHighlights from './components/WorkHighlights';
 import Services from './components/Services';
-import Products from './components/Products';
+import Work from './components/Work';
 import About from './components/About';
 import Contact from './components/Contact';
 import EthicalAI from './components/EthicalAI';
@@ -20,14 +19,19 @@ import WampStack from './components/tech-stacks/WampStack';
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
 
+  const goTo = (page: string) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0 });
+  };
+
   const renderPage = () => {
     switch (currentPage) {
       case 'about':
         return <About />;
       case 'services':
-        return <Services setCurrentPage={setCurrentPage} />;
-      case 'products':
-        return <Products />;
+        return <Services setCurrentPage={goTo} />;
+      case 'work':
+        return <Work setCurrentPage={goTo} />;
       case 'contact':
         return <Contact />;
       case 'ethical-ai':
@@ -37,23 +41,21 @@ function App() {
       case 'quote':
         return <ProjectQuote />;
       case 'tech-stacks':
-        return <TechStacks setCurrentPage={setCurrentPage} />;
+        return <TechStacks setCurrentPage={goTo} />;
       case 'tech-stack-lean':
-        return <LeanStack setCurrentPage={setCurrentPage} />;
+        return <LeanStack setCurrentPage={goTo} />;
       case 'tech-stack-mean':
-        return <MeanStack setCurrentPage={setCurrentPage} />;
+        return <MeanStack setCurrentPage={goTo} />;
       case 'tech-stack-lamp':
-        return <LampStack setCurrentPage={setCurrentPage} />;
+        return <LampStack setCurrentPage={goTo} />;
       case 'tech-stack-wamp':
-        return <WampStack setCurrentPage={setCurrentPage} />;
+        return <WampStack setCurrentPage={goTo} />;
       default:
         return (
           <>
-            <Hero />
-            <LogoShowcase />
-            <VideoSection />
-            <Services setCurrentPage={setCurrentPage} />
-            <Products />
+            <Hero setCurrentPage={goTo} />
+            <WorkHighlights setCurrentPage={goTo} />
+            <Services setCurrentPage={goTo} />
           </>
         );
     }
@@ -61,11 +63,11 @@ function App() {
 
   return (
     <div className="min-h-screen bg-orange-100">
-      <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      <Header currentPage={currentPage} setCurrentPage={goTo} />
       <main className="pt-16 bg-orange-100">
         {renderPage()}
       </main>
-      <Footer currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      <Footer currentPage={currentPage} setCurrentPage={goTo} />
     </div>
   );
 }
